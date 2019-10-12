@@ -300,5 +300,4 @@ Em caso de dúvidas em relação ao RASA, veja o grupo [TELEGRAM RASA Stack Bras
 # Licença
 
 Todo o framework do boilerplate é desenvolvido sob a licença
-[GPL3](https://github.com/lappis-unb/rasa-ptbr-boilerplate/blob/master/LICENSE)
-
+https://github.com/marciosborba/asha/blob/master/LICENSE
