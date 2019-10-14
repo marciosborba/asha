@@ -4,9 +4,13 @@
 <a href="https://codeclimate.com/github/lappis-unb/rasa-ptbr-boilerplate/maintainability"><img src="https://api.codeclimate.com/v1/badges/3fe22bf52000e147c6df/maintainability"/></a>
 
 
-Esse projeto de Inteligencia Artificial está sendo feito em PYTHON com a biblioteca RASA NLU e RASA CORE com configurações necessárias para a construção de um projeto de ChatBot com objetivo de ajudar pessoas em depressão com objetivo de iniciar uma conversa, e se necessário, encaminhar para o atendimento humano do Disk-Vida.
+De acordo com dados da Organização Mundial da Saúde (OMS), o Brasil tem um número equivalente a um suicídio a cada 45 minutos. No mundo, há uma tentativa falha de tirar a própria vida a cada três segundos – e uma definitiva a cada 40 segundos. São cerca de 1 milhão de suicídios em todo o planeta.
 
-Orgulhosamente esse projeto teve como base o [Boilerplate](https://github.com/lappis-unb/rasa-ptbr-boilerplate) do Laboratório Avançado de Produção, Pesquisa e Inovação em Software (LAPPIS/UnB)
+Segundo os mesmos dados, o suicídio é a terceira causa de morte entre jovens de 15 a 29 anos no Brasil, ficando atrás de violência interpessoal e acidentes de trânsito. Cerca de quase todos esses suicídios estão relacionados a transtornos mentais, como a depressão.
+
+Esse projeto de Inteligencia Artificial está sendo desenvolvido em PYTHON com a biblioteca RASA NLU e RASA CORE de código aberto com configurações necessárias para a construção de um projeto de ChatBot com objetivo de ajudar pessoas em depressão, fornecendo informações atualizadas de estudo e pesquisas a respeito da doença, aconselhamento de profissionais multidisciplinares, e se necessário, encaminhando para o atendimento humano do Disk-Vida conforme a classificação do estágio da doença, prevenindo uma possível tentativa de suicídio.
+
+Orgulhosamente esse projeto teve como base o [Boilerplate](https://github.com/lappis-unb/rasa-ptbr-boilerplate) do Laboratório Avançado de Produção, Pesquisa e Inovação em Software (LAPPIS/UnB).
 
 # Entenda a Arquitetura
 
