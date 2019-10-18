@@ -11,7 +11,7 @@
 - voce e [crente](religiao)
 - voce é [católico](religiao)
 - voce é [ateu](religiao)
-- você é espírita
+- você é [espírita](religiao)
 - voce e espirita
 - você é religioso
 - qual é o seu deus?

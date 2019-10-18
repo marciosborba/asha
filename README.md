@@ -323,12 +323,12 @@ sudo docker-compose up -d Bot
 ```
 
 
-# PRECISA DE AJUDA?
+## PRECISA DE AJUDA?
 
 Em caso de dúvidas em relação ao RASA, veja o grupo [TELEGRAM RASA Stack Brasil](https://t.me/RasaBrasil), a comunidade esta em crescimento no Brasil ou consulte a documentação do RASA [RASA](https://rasa.com/docs/).
 
 
-# LICENÇA
+### LICENÇA
 
 Todo o framework do ASHA é desenvolvido sob a licença
 https://github.com/marciosborba/asha/blob/master/LICENSE

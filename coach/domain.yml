@@ -77,13 +77,13 @@ templates:
         Acho que não te entendi, você pode me perguntar de novo usando outras palavras?
 
     - text: |
-        Vamos tentar mais uma vez? Eu não consegui te entender direito, me pergunta de outro jeito?
+        Vamos tentar mais uma vez? Eu não consegui te entender direito, me pergunta de outro jeito
 
   utter_diga_mais:
     - text: |
-        Por enquanto, só entendo perguntas completas.
-        Como por exemplo "qual é o melhor time do Brasil?".
-        Se você puder pergunta de novo de outro jeito :)
+        Por enquanto, só entendo perguntas curtas e completas.
+        Como por exemplo "o que é depressão?".
+        Por favor, pergunte de outro jeito :)
 
   utter_elogios:
     - text: |
@@ -124,7 +124,7 @@ templates:
 
   utter_tudo_bem:
     - text: |
-          Tudo bem, obrigada! Em que posso te ajudar?
+          Tudo bem, obrigado! Em que posso te ajudar?
 
   utter_religiao:
     - text: |
