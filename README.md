@@ -14,7 +14,7 @@ Orgulhosamente esse projeto teve como base o [Boilerplate](https://github.com/la
 
 # Entenda a Arquitetura
 
-É utilizado no boilerplate diversas tecnologias que interagem entre si para obter um melhor resultado. Veja a arquitetura implementada:
+Diversas tecnologias que interagem entre si são utilizadas neste projeto para obter um melhor resultado. Veja a arquitetura implementada:
 
 ![](https://user-images.githubusercontent.com/8556291/57933140-d8d66b80-7892-11e9-8d58-a7eda60b099b.png)
 
@@ -30,19 +30,50 @@ Este script foi configurado para construir as imagens genéricas necessárias pa
 Caso seu projeto utilize este boilerplate e vá realizar uma integração contínua ou similar, é interessante
 criar um repositório para as imagens e substituir os nomes das imagens "asha Bot", "asha/coach" e "asha/botrequirements" pelas suas respectivas novas imagens, por exemplo "<organização> Bot" em repositório público.
 
+## INSTALAÇÃO
+Para rodar o projeto, recomendamos o LINUX, pois é necessário a instalação do docker e docker-compose. Somente nas edições PRO e Enteprise do Windows é possível instalar o docker.
+
+### GIT
+Em primeiro lugar, vamos clonar o projeto do repositório para o nosso computador:
+
+```sh
+git clone https://github.com/marciosborba/asha.git
+```
+
+### INSTALANNDO AS DEPENDÊNCIAS
+Agora de dentro da pasta/diretório do projeto clonado, vamos executar o requirements.txt
+
+```sh
+pip install -r requirements.txt
+```
+
+### TREINAMENTO DO BOT
+Agora com tudo instalado em sua maquina, precisamos treinar o bot:
+
+```sh
+sudo docker-compose run --rm coach make train
+```
+
+### RODAR O BOT NO CONSOLE
+Para testar o bot pelo console, rode o comando abaixo:
+
+```
+sudo docker-compose run --rm bot make run-console
+```
+
 ### ROCKETCHAT
 Para testar o assistente virtual utilizando da plataforma do ROCKETCHAT, siga os seguintes comandos para subir os containers em seu computador:
 
 ```sh
 sudo docker-compose up -d rocketchat
 
-# Caso não vá subir a stack do Analytics
-# aguarde o container do rocketchat subir
+# Aguarde o container do rocketchat subir e em seguida suba o bot
 
 sudo docker-compose up -d Bot
 ```
 
 Caso queira subir toda a stack e vá utilizar do analytics é necessário substituir a seguinte variável de ambiente no `docker Bot-rocketchat.env` de **False** para **True**.
+
 ```
 # Analytics config
 ENABLE_ANALYTICS=True
@@ -73,7 +104,7 @@ Action: Send Message
 ```
 
 
-#### Instalação
+### UTILIZAR O BOT EM UM SITE
 
 Para executar o Bot em um site, você precisa inserir o seguinte código JAVASCRIPT na sua página:
 
@@ -94,6 +125,7 @@ host = 'http://localhost:3000';
 ```
 
 **Atenção**: É preciso alterar a variável `host` dentro do código acima para a url do site onde estará o seu ROCKETCHAT.
+
 
 ### TELEGRAM
 
@@ -116,25 +148,17 @@ Depois execute o Bot no TELEGRAM:
 sudo docker-compose up bot_telegram
 ```
 
-### Console
+### TREINAMENTO ONLINE
 
 ```sh
-make train
-sudo docker-compose run --rm Bot make run-console
-```
-
-### Train Online
-
-```
-make train
 sudo docker-compose run --rm coach make train-online
 ```
 
-## Analytics
+### ANALYTICS
 
 Para a visualização dos dados da interação entre o usuário e o ChatBot, é utilizado parte da Stack do ELASTIC, composta pelo ELASTICSEARCH e o KIBANA. Com isso, utilizamos um broker para fazer a gerência das mensagens. É possível adicionar mensagens ao ELASTICSEARCH independente do tipo de mensageiro utilizado.
 
-#### Setup RabbitMQ
+#### SETUP RabbitMQ 
 
 Primeiramente para fazer o setup do analytics é necessário subir o RabiitMQ e suas configurações.
 
@@ -162,7 +186,7 @@ RABBITMQ_DEFAULT_PASS=admin
 As configurações de `RABBITMQ_DEFAULT_USER` e `RABBITMQ_DEFAULT_PASS` devem ser as mesmas definidas no serviço do `rabbitmq`.
 
 
-### Execução
+### EXECUÇÃO
 
 Existem duas formas para executar o Asha com o *broker*. A primeira delas é via linha de comando.
 Para utilizar esta forma é preciso definir Dentro do arquivo `endpoints.yml` as configurações do broker:
@@ -198,7 +222,7 @@ Ao final é necessário buildar novamente o container do Bot.
 sudo docker-compose up --build -d Bot
 ```
 
-### Setup ELASTICSEARCH
+### SETUP ELASTICSEARCH
 
 O ELASTICSEARCH é o serviço responsável por armazenar os dados provenientes da interação entre o usuário e o ChatBot.
 
@@ -218,7 +242,7 @@ ENVIRONMENT_NAME=localhost
 BOT_VERSION=last-commit-hash
 ```
 
-### Setup KIBANA (Visualização)
+### SETUP KIBANA (Visualização)
 
 Para analisar os dados das conversas com o usuário, utilizamos o KIBANA para ver como os usuários estão interagindo com o Bot, os principais assuntos, média de usuários e outras informações da análise de dados.
 
@@ -230,7 +254,8 @@ sudo docker-compose up -d KIBANA
 
 **Atenção:** Caso queira configurar permissões diferentes de usuários (Login) no ELASTICSEARCH/KIBANA, siga esse tutorial ([link](https://github.com/lappis-unb/rasa-ptbr-boilerplate/tree/master/docs/setup_user_elasticsearch.md)).
 
-#### Importação de Dashboards
+
+#### IMPORTAÇÃO DE DASHBOARDS
 
 Para subir com os dashboards criados para fazer o monitoramento de bots:
 
@@ -242,7 +267,7 @@ Após rodar o comando anterior os dashboards importados estarão presentes no me
 
 
 
-## Testando Fluxos de Conversa
+### TESTANDO O FLUXO DE CONVERSA
 
 É possível testar os fluxos de conversação utilizando o [Evaluation do RASA CORE](https://github.com/lappis-unb/tais/wiki/Testes-Automatizados). Para testá-los no seu Bot basta adicionar um arquivo dentro do diretório  Bot/e2e/` com as histórias a serem testadas. Essas histórias devem ser descritas normalmente, porém com exemplos de frases para cada uma das *Intents* sendo testadas, segundo o formato abaixo:
 
@@ -266,10 +291,9 @@ Para gerar data-science referente aos testes automatizados do Bot, execute o seg
 sudo docker-compose run --rm Bot make test-dialogue
 ```
 
-## Notebooks - Análise de Dados
+## NOTEBOOKS - ANÁLISE  DE DADOS 
 
-### Setup
-
+### SETUP
 Levante o container `notebooks`
 
 ```sh
@@ -280,28 +304,31 @@ Acesse o notebook em `localhost:8888`
 
 
 
-## Tutorial para levantar toda a stack
+## TUTORIAL PARA LEVANTAR TODA A STACK
 
 ```sh
 sudo docker-compose up -d rocketchat
 
 sudo docker-compose up -d rabbitmq
+
 sudo docker-compose up -d rabbitmq-consumer
 
 sudo docker-compose up -d elasticsearch
+
 sudo docker-compose run --rm -v $PWD/analytics:/analytics Bot python /analytics/setup_elastic.py
+
 sudo docker-compose up -d KIBANA
 
 sudo docker-compose up -d Bot
 ```
 
 
-# Como conseguir ajuda
+# PRECISA DE AJUDA?
 
 Em caso de dúvidas em relação ao RASA, veja o grupo [TELEGRAM RASA Stack Brasil](https://t.me/RasaBrasil), a comunidade esta em crescimento no Brasil ou consulte a documentação do RASA [RASA](https://rasa.com/docs/).
 
 
-# Licença
+# LICENÇA
 
-Todo o framework do boilerplate é desenvolvido sob a licença
+Todo o framework do ASHA é desenvolvido sob a licença
 https://github.com/marciosborba/asha/blob/master/LICENSE
