@@ -35,7 +35,11 @@
 - fale sobre depressao
 - o que me diz sobre depressao
 
-
+## intent:depressao_causa
+- quais as causas de depressao
+- o que causa a depressão
+- causas da depressão
+- causas de depressao
 
 ## intent:depressao_diagnostico
 - como diagnosticar a depressao
@@ -46,7 +50,7 @@
 - qual o medico de depressao
 - como saber se tenho depressao
 
-## intent:depressao_sintoma
+## intent:depressao_sintomas
 - quais os sintomas da depressao
 - como começa a depressao
 - sintomas da depressao
@@ -91,7 +95,7 @@
 - todas as pessoas estao sujeitas a depressao
 - todo mundo pode ter depressao
 
-## intent:depressao_crianca
+## intent:depressao_criança
 - criança pode ter depressao
 - depressao tem criança
 - criança tem depressao
@@ -177,7 +181,7 @@
 - drogas causam depressao
 - depressao e causada pelo uso de drogas
 
-## intent:depressao_remedio
+## intent:depressao_remedios
 - quais remedios para depressao
 - depressao é curada com remedio
 - remedios curam a depressao
@@ -260,6 +264,12 @@
 - depressao causa suicidio
 - pessoas com depressao podem se matar
 - pessoas com depressao podem se suicidar
+
+## intent:depressao_ansiedade
+- qual a diferença entre depressao e ansiedade
+- diferença entre depressão e ansiedade
+- depressão e ansiedade
+- depressao e ansiedade
 
 ## intent:despedir
 - tchau obrigada
