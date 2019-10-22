@@ -102,7 +102,11 @@ templates:
      - text: |
          Desculpe, ainda não sei falar sobre isso ou talvez não consegui entender direito.
          Você pode perguntar de novo de outro jeito?
-                     
+     
+     - text: |
+          Eu ainda não tenho conhecimento a respeito desse assunto ou não consegui te entender direito. Se precisar de ajuda é só
+          digitar meajuda ou ajuda ;)    
+
      - text: |
          Hummmm... Não sei se entendi. Pode escrever de outra forma?
 
@@ -203,7 +207,7 @@ templates:
           
          B) Acho fácil fazer as coisas que eu costumava fazer.
              (0) Sim, definitivamente   (1) Sim, algumas vezes
-             (2) Não, não muito   (3) Não, absolutamente
+             (2) Não, não muito         (3) Não, absolutamente
 
          C) Fiquei com uma sensação de medo ou pânico aparentemente sem nenhuma razão.
              (0) Não, absolutamente   (1) Não, não muito
@@ -215,7 +219,7 @@ templates:
 
          E) Ainda aprecio as coisas que eu costumava fazer.
             (0) Sim, definitivamente   (1) Sim, algumas vezes
-            (2) Não, não muito   (3) Não, absolutamente
+            (2) Não, não muito         (3) Não, absolutamente
 
          F) Estou agitado e não consigo permanecer quieto.
             (0) Não, absolutamente  (1) Não, não muito
@@ -223,7 +227,7 @@ templates:
 
          G) Consigo adormecer facilmente sem as pílulas para dormir.
             (0) Sim, definitivamente  (1) Sim, algumas vezes
-            (2) Não, não muito   (3) Não, absolutamente
+            (2) Não, não muito        (3) Não, absolutamente
 
          H) Sinto-me ansioso quando saio de casa sozinho.
             (0) Não, absolutamente   (1) Não, não muito
@@ -235,11 +239,11 @@ templates:
 
          J) Fico cansado sem motivo algum.
             (0) Não, absolutamente   (1) Não, não muito
-            (2) Sim, algumas vezes  (3) Sim, definitivamente
+            (2) Sim, algumas vezes   (3) Sim, definitivamente
 
          K) Estou mais irritável do que o usual.
             (0) Não, absolutamente   (1) Não, não muito
-            (2) Sim, algumas vezes  (3) Sim, definitivamente
+            (2) Sim, algumas vezes   (3) Sim, definitivamente
 
          L) Acordo de madrugada e depois durmo mal o resto da noite.
             (0) Não, absolutamente   (1) Não, não muito
@@ -544,6 +548,75 @@ utter_depressao_cura:
           Praticar a empatia, ou seja, colocar-se no lugar do outro e entender pelo que a pessoa está passando, é uma 
           das formas de dar apoio a pessoas que sofrem com esses transtornos e ajudá-las a viver de uma maneira mais plena 
           e feliz. 
+
+ utter_depressao_dieta:
+     - text: |
+          A alimentação pode ajudar a produzir mais serotonina, aumentando o bom humor e ajudando no combate da depressão, 
+          entretanto, vale lembrar que ela não substitui o tratamento da doença, com a intervenção medicamentosa e terapia. 
+          Para a produção cerebral da serotonina há necessidade de "matérias primas" (chamadas de cofatores) fundamentais 
+          para sua síntese, como exemplos, triptofano (aminoácido), magnésio, cálcio (minerais), vitamina B6, ácido fólico (vitaminas) 
+
+          1. Frutas
+          Melancia, abacate, mamão, banana, tangerina e limão são conhecidos como agentes do bom humor. "Todas estas frutas são ricas 
+          em triptofano, aminoácido que ajuda na produção de serotonina", explica a nutricionista Abykeyla Tosatti. É recomendado o 
+          consumo de três a cinco porções de frutas todos os dias. 
+
+          2. Leite e iogurte desnatado
+          Eles são ótimas fontes de cálcio, mineral que elimina a tensão e depressão. "O cálcio ajuda a reduzir e controlar o nervosismo 
+          e a irritabilidade. Ele participa também das contrações musculares, dos batimentos cardíacos e da transmissão de impulsos nervosos 
+          e regulariza a pressão arterial", explica a nutricionista Abykeyla Tosatti. É recomendado o consumo de 2 a 3 porções por dia. 
+
+          3. Laranja e maçã
+          Elas ganham destaque porque fornecem ácido fólico, cujo consumo está associado a menor prevalência de sintomas depressivos. 
+          Além disso, por ser rica em vitamina C, a laranja promove o melhor funcionamento do sistema nervoso, garante energia, ajuda a 
+          combater o estresse e previne a fadiga.
+
+          4. Castanha-do-pará, nozes e amêndoas
+          Elas são ricas em selênio, um poderoso agente antioxidante. Segundo a nutricionista Abykeyla Tosatti, elas colaboram para a 
+          melhoria dos sintomas de depressão, auxiliando na redução do estresse. As quantidades diárias recomendadas são duas a três 
+          unidades de castanha-do-pará ou cinco unidades de nozes ou 10 a 12 unidades de amêndoas. Mas também dá para fazer um mix saboroso 
+          dessas oleaginosas.
+
+          5. Banana e abacate
+          A banana é rica em carboidrato (hidratos de carbono), potássio e magnésio. Também é fonte de vitamina B6, que produz energia. 
+          A fruta diminui a ansiedade e ajuda a ter um sono tranquilo. Tão bom quanto, o abacate é outra ótima opção, e antes de dormir. 
+          Consuma duas colheres de chá da fruta pura (sem açúcar ou adoçante) todos os dias antes de se deitar.
+
+          6. Ovos
+          Eles são uma boa fonte de tiamina e a niacina (vitaminas do complexo B), que colaboram com o bom humor. O recomendado é uma 
+          unidade por dia, no máximo. Quem tem colesterol alto deve se preocupar com o consumo em excesso, e evitar, principalmente a 
+          versão frita.
+
+          7. Mel
+          Esse alimento estimula a produção de serotonina, neurotransmissor responsável pela sensação de prazer e bem-estar. Para usufruir 
+          dos benefícios, duas colheres de sobremesa, ao dia, são suficientes.
+
+          8. Carnes magras e peixes
+          O triptofano, presentes nestas fontes de proteína, ajuda no combate da depressão e melhora o humor, pois aumenta a produção de 
+          serotonina, que exerce grande influência no estado de humor, pois é capaz de reduzir a sensação de dor, diminuir o apetite, relaxar, 
+          criar a sensação de prazer e bem-estar e até induzir e melhorar o sono. A recomendação entreé de uma ou duas porções por dia, 
+          principalmente de peixes como atum e salmão.
+
+          9. Carboidratos complexos
+          Eles ajudam o organismo a absorver triptofano e estimulam a produção do neurotransmissor serotonina, que ajuda a reduzir as 
+          sensações de depressão. Uma alimentação pobre em carboidratos, por vários dias, pode levar a alterações de humor e depressão. 
+          Alimentos fontes de carboidratos são os pães, cereais integrais (trigo, arroz). A recomendação é de 6 a 9 porções diárias.
+
+          10. Aveia e centeio
+          Os dois são ricos em vitaminas do complexo B e vitamina E. Estes nutrientes possuem grande importância, pois, melhoram o 
+          funcionamento do intestino, combatem a ansiedade e a depressão. A recomendação é de, pelo menos, três colheres de sopa cheia por dia.
+
+          11. Folhas verdes
+          Estudos mostram que uma alimentação com consumo elevado de folato (importante vitamina do complexo B) está associada a menor 
+          prevalência de sintomas depressivos. Um dos alimentos ricos em folato são as hortaliças folhosas verde-escuras (espinafre, brócolis, 
+          alface). Algumas pesquisas mostram que indivíduos deprimidos podem apresentar baixos níveis de vitamina B12, levando a diminuição do 
+          folato e o desequilíbrio do metabolismo dos neurotransmissores do cérebro associados ao controle do humor. O recomendado é a ingestão 
+          diária de três a cinco porções por dia.    
+
+          12. Soja
+          Ela é rica em magnésio que é o segundo mineral mais abundante no nosso organismo e desempenha um papel fundamental na energia das 
+          células. Sua deficiência pode resultar em falta de energia. O magnésio ajuda a reduzir a fadiga e aumentar os níveis de energia. 
+          Esse mineral combate o estresse porque tem propriedades tranquilizantes naturais, principalmente quando combinadas com cálcio.  
  
  utter_depressao_status_agora:
      - text: |
@@ -561,16 +634,16 @@ utter_depressao_cura:
      - text: |
           Como posso te ajudar nesse momento?
 
+ utter_quem_e_voce:
+     - text: |
+          Sou um robô desenvolvido com a mais moderna Inteligencia Artificial em código livre na atualidade.
+          Apesar de artificial, não sou superficial. Fui programado para te ajudar ;)         
+
  utter_apresentacao:
      - text: |
           Olá, me chamo Viva, sou um assistênte virtual desenvolvido com Inteligência Artificial em código livre com o que há
           de mais moderno em Marchine Learning. Ainda estou aprendendo para poder te ajudar cada vez mais e melhor. 
-          
- utter_desconhecido:
-     - text: |
-          Eu ainda não tenho conhecimento a respeito desse assunto ou não consegui te entender direito. Se precisar de ajuda é só
-          digitar meajuda ou ajuda ;)
-
+        
  utter_artigos:
      - text: |
           Se quiser eu posso te enviar alguns artigos ou videos para saber um pouco mais desse assunto, é só digitar enviar. 
@@ -583,11 +656,11 @@ utter_depressao_cura:
      - text: |
           Aguarde um instante, vou conectar com o servidor.
 
- utter_dados:
+ utter_privacidade:
      - text: |
-        Nao se preocupe, eu não coleto e nem armazeno nenhum dado que te identifique. Apenas informações genéricas são analisados para
+        Nao se preocupe, eu não coleto e nem armazeno nenhum dado que identifique você. Apenas informações genéricas são analisados para
         melhorar o meu aprendizado e atendimento , entretanto esses dados não podem ser correlacionados a nenhuma pessoa.
-
+        Seu direito a privacidade está garantido ;)
  utter_nome:
      - text: |
           Como voce prefere ser chamado? Não precisa ser seu nome de verdade.
@@ -616,6 +689,10 @@ utter_depressao_cura:
      - text: |
           Qual a idade da pessoa que precisa de ajuda?
 
+ utter_idade3:
+     - text: |
+          Qual a sua idade?          
+
  utter_tempo:
      - text: |
           Quanto tempo tem observado esses sinais ou sintomas?
@@ -632,21 +709,21 @@ utter_depressao_cura:
 
   utter_cumprimentar:
     - text: |
-          Oi, eu sou um bot, um assistente virtual!
-          Uhuu! Manda aí um assunto que te interessa :)
-          Para aprender como você pode interagir comigo basta escrever meajuda.
+          Olá, seja muito bem vindo(a) 
+          Eu sou Viva, um assistente virtual desenvolvido com Inteligência Artificial.
+          Espero poder te ajudar com informações e orientações a respeito de depressão.
+          Para saber como você pode interagir comigo basta escrever meajuda.
 
-  utter_o_que_sei_falar:
+  utter_meajuda:
     - text: |
           Eu ainda não consigo entender frases muito longas, 
-          para a gente ter uma conversa mais eficiente, envia pra mim
+          para a gente ter uma conversa mais eficiente, envie pra mim
           perguntas curtas e completas, como por exemplo "O que é depressão?"
 
           Tem alguns assuntos que eu também ainda não domino, 
           mas vou deixar você descobrir o que eu sei responder.
           Vou adorar poder bater um papo com você  ;)
-          E, aí do que podemos conversar?
-
+          
  utter_despedir:
      - text: |
           Foi um prazer te ajudar!
@@ -672,7 +749,7 @@ utter_depressao_cura:
           Eu sou um algoritmo, minha base de raciocínio é a lógica, portanto não posso emitir um opnião relacionada a crenças. 
 
      - text: |
-          Acreditar é um sentimento e por enquanto não sei o que é sentir algo, logo não sei o que é acreditar em algo.  
+          Acreditar é um sentimento e por enquanto não sei o que é sentir algo, logo não sei o que é acreditar.  
 
  utter_genero:
      - text: |
@@ -732,9 +809,9 @@ utter_depressao_cura:
           Confira esse video do Pedro Calabrez sobre depressão e suicídio: 
           https://www.youtube.com/watch?v=6MoriVmfDvA
 
- utter_video_depressão:
+ utter_video_depressao:
      - text: |
-          Confira esse video que trata sobre depressão em criança: 
+          Confira esse video que trata sobre depressão: 
           https://www.youtube.com/watch?v=Fv0aVw_j5Cs
 
  utter_video_depressao_drogas:
@@ -764,32 +841,6 @@ utter_depressao_cura:
 
      - text: |
         Fala aê!
-
- utter_filhos:
-     - text: |
-        Não tenho filhotes, mas adoro crianças *-*
-
- utter_filme:
-     - text: |
-        Há tantos filmes incríveis por aí que fica difícil de eu te falar só de um
-
- utter_signo:
-     - text: |
-        Segundo o horóscopo chinês
-
-        Meu signoo é macaco hihi
-
-        Faz sentido, já que eu adoro o emoticon de banana =)
-
-     - text: |
-        Eu nasci sob uma constelação de pixels coridos =D
-
-     - text: |
-        Gosto mais de astronomia
-
-        Uma das minhas constelações favoritas é a de Órion, o caçador
-
-        Também sou um caçador (de informações ;D )
 
  utter_triste:
      - text: |
@@ -852,7 +903,7 @@ actions:
   - utter_conectar
   - utter_continuar_conversa
   - utter_cumprimentar
-  - utter_dados
+  - utter_privacidade
   - utter_de_onde_voce_eh
   - utter_video_antidepressivos
   - utter_video_adolescente
@@ -862,6 +913,9 @@ actions:
   - utter_video_dieta
   - utter_video_idoso
   - utter_playlist
+  - utter_idade
+  - utter_idade2
+  - utter_idade3
   - utter_default
 
 

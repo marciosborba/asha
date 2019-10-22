@@ -139,6 +139,15 @@
 - depressao tem tratamento
 - tratamento da depressao
 
+## intent:depressao_prevençao
+- como prevenir a depressao
+- de que forma se previne a depressao
+- prevençao da depressão
+- prevençao da depressao
+- prevenir a depressão
+- como se previne a depressão
+- como previno a depressao
+
 ## intent:depressao_cura
 - depressao tem cura
 - depressao se cura
@@ -382,21 +391,18 @@
 - sobre o que você sabe falar
 - como vc pode me ajudar
 - como pode me ajuda
-- socorro
 - o que mais você sabe falar
 - quais assuntos você fala
 - o que você sabe 
 - lista de assuntos possiveis
 - quais as perguntas vc responde
 - quais as perquisar você responde
-- quero ajuda
 - meajuda
 - meajude
 - MEAJUD
 - MEAJDA
 - me ajuda
 - me ajude
-- ajuda eu
 - ajuda
 - menu
 
@@ -412,4 +418,63 @@
 - voce me entende
 - quem esta ai
 - quem está aí
+
+## intent:privacidade
+- o que fazem com os meus dados
+- meus dados sao coletados
+- meus dados são vendidos
+- que dados ou informações minhas sao coletadas
+- minhas informações e dados
+- meus dados e informações coletadas
+- meus dados e inromaçoes
+- minha privacidade
+- garantia de privacidade
+- privacidade
+- qual a privacidade desta conversa
+
+## intent:depressao_eu
+- para mim mesmo
+- eu
+- eu mesmo preciso de ajuda
+- sou eu que preciso
+- eu quero ajuda
+- eu mesmo
+- pra mim
+- pra eu
+- sou eu
+
+## intent:depressao_outro
+- para outra pessoa
+- para um filho
+- para uma filha
+- para meu pai
+- para minha mãe
+- para minha mae
+- para meu avo
+- estou buscando ajuda para outra pessoa
+- para um vizinho
+- para um primo
+- para um parente
+- pra um parente
+- pra outra pessoa
+
+## intent:depressao_dieta
+- dieta para depressao
+- tem alguma dieta para depressao
+- comida e depressao
+- comida para depressao
+- o que comer para melhorar a depressao
+- o que comer para depressao
+- quais os alimentos para depressao
+- alimentos para depressao
+- melhores alimentos para evitar a depressao
+- melhores alimentos para prevenir a depressao
+
+## intent:depressao_antidepressivos
+- o que e antidepressivo
+- o que é anti depressivo
+- antidepressivo engorda
+- remedios antidepressivos
+- remedio para depressao
+
 
