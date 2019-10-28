@@ -1,268 +1,381 @@
-intents:
-  - cumprimentar
-  - depressao_o_que_e
-  - depressao_causas
-  - depressao_diagnostico
-  - depressao_sintomas
-  - depressao_tipos
-  - depressao_teste
-  - depressao_familia
-  - depressao_pessoas
-  - depressao_criança
+--- 
+actions: 
+  - utter_depressao_adolescente
+  - utter_depressao_ansiedade
+  - utter_depressao_causa
+  - utter_depressao_criança
+  - utter_depressao_cura
+  - utter_depressao_diagnostico
+  - utter_depressao_dieta
+  - utter_depressao_drogas
+  - utter_depressao_familia
+  - utter_depressao_idoso
+  - utter_depressao_o_que_e
+  - utter_depressao_pessoas
+  - utter_depressao_prevençao
+  - utter_depressao_profissional
+  - utter_depressao_remedio
+  - utter_depressao_sintomas
+  - utter_depressao_status_agora
+  - utter_depressao_risco
+  - utter_depressao_status_semana
+  - utter_depressao_suicidio
+  - utter_depressao_teste
+  - utter_depressao_tipos
+  - utter_depressao_tratamento
+  - utter_privacidade
+  - utter_quem_e_voce
+  - utter_triste
+  - utter_meajude
+  - utter_despedir
+  - utter_diga_mais
+  - utter_cumprimentar
+  - utter_antidepressivo
+  
+entities: 
+  - nome
+intents: 
   - depressao_adolescente
-  - depressao_idoso
-  - depressao_tratamento
+  - depressao_ansiedade
+  - depressao_causa
+  - depressao_criança
   - depressao_cura
-  - depressao_profissional
+  - depressao_diagnostico
+  - depressao_dieta
   - depressao_drogas
-  - depressao_remedios
-  - depressao_status_melhora
-  - depressao_status_neutro
-  - depressao_status_grupo_de_risco
+  - depressao_familia
+  - depressao_idoso
+  - depressao_o_que_e
+  - depressao_pessoas
+  - depressao_prevençao
+  - depressao_profissional
+  - depressao_remedio
+  - depressao_sintomas
+  - depressao_status_agora
+  - depressao_risco
+  - depressao_status_semana
   - depressao_suicidio
-  - despedir
-  - negar_despedir
-  - negar_despedir
-  - diga_mais
-  - tudo_bem
-  - meajuda
+  - depressao_teste
+  - depressao_tipos
+  - depressao_tratamento
+  - privacidade
   - quem_e_voce
-  
-  
-  
-  
-  
-  - cumprimentar
-  - o_que_sei_falar
+  - triste
+  - meajude
   - despedir
-  - out_of_scope
-  - negar_despedir
-  - negar
   - diga_mais
-  - tudo_bem
-  - elogios
-  - botao
-  - afirmacao_botao
-  - negacao_botao
-
-  - religiao
-  - esporte
-  - time
-  - linguagens
-  - genero
-  - star_wars
-  - piada
-  - license
-  - onde_voce_mora
-  - como_estou
-  - playlist
-  - comida
-  - cor
-  - de_onde_voce_eh
-  - relationship
-  - me
-  - filhos
-  - filme
-  - signo
-  - triste
-  - hobby
-  - bff
-  - historia
-  - risada
-
-  - action_test
-
-entities:
-  - religiao
-  - esporte
-  - time
-  - linguagens
-  - genero
-  - starwars
-  - piada
-  - license
-  - live
-  - how
-  - playlist
-  - comida
-  - cor
-  - where
-  - relationship
-  - me
-  - filhos
-  - filme
-  - signo
-  - triste
-  - hobby
-  - bff
-  - historia
-
-templates:
- utter_default:
-     - text: |
-         Desculpe, ainda não sei falar sobre isso ou talvez não consegui entender direito.
-         Você pode perguntar de novo de outro jeito?
-     
-     - text: |
-          Eu ainda não tenho conhecimento a respeito desse assunto ou não consegui te entender direito. Se precisar de ajuda é só
-          digitar meajuda ou ajuda ;)    
-
-     - text: |
-         Hummmm... Não sei se entendi. Pode escrever de outra forma?
-
-     - text: |
-         Acho que não te entendi, você pode me perguntar de novo usando outras palavras?
-
-     - text: |
-         Vamos tentar mais uma vez? Eu não consegui te entender direito, me pergunta de outro jeito
-
- utter_depressao_o_que_e:
-     - text: |
-         A depressão é um distúrbio mental comum que afeta cerca de 300 milhões de pessoas no mundo.
-         Ela causa mudanças de humor, como tristeza profunda e irritabilidade, que podem durar por 
-         semanas ou até mesmo meses. Até 2020, a depressão será a maior causa de incapacitação no mundo. 
-         É necessário tratamento médico para controlar o transtorno e recuperar a qualidade de vida.  
-        
- utter_depressao_causa:
-     - text: |
-         Existem diversas causas possíveis para a depressão. Não existe uma resposta definitiva do motivo da 
-         pessoa desenvolver este distúrbio. A depressão pode se manifestar sem razão aparente, até mesmo em 
-         quem parece estar em um bom momento de vida. Alguns fatores possíveis para o desenvolvimento do 
-         distúrbio são
-        
-         Características individuais – a depressão pode se desenvolver por fatores genéticos da pessoa ou 
-         até mesmo após algum evento estressante/traumatizante, como a perda de um ente querido ou um problema 
-         no emprego. 
-        
-         Fatores químicos e fisiológicos da depressão – podem ocorrer por conta do desequilíbrio das substâncias
-         químicas do cérebro, conhecidas como neurotransmissores.
-        
-         Medicamentos e outras doenças – alguns podem ter como reação adversa o desenvolvimento do distúrbio. 
-         Além disso, algumas doenças podem causar sinais e sintomas parecidos com os da depressão.
-   
- utter_depressao_diagnostico:
-     - text: |
-         O diagnóstico da depressão é clínico, feito pelo médico após coleta completa da história do paciente 
-         e realização de um exame do estado mental. Não existe exames laboratoriais específicos para diagnosticar 
-         depressão.
-
- utter_depressao_tipos:
-     - text: |
-         Os sinais e sintomas mais comuns podem surgir em diferentes tipos de depressão. Identificar corretamente 
-         o tipo ajuda a definir qual o melhor tratamento para o caso. Entre os principais tipos de depressão estão
-        
-         Transtorno depressivo maior – é um transtorno mental que caracteriza-se por sintomas de desânimo, tristeza, 
-         falta de vontade, fadiga, choro fácil, falta de prazer, dificuldade de concentração, mudanças no apetite, 
-         insônia, perda da libido, entre outras manifestações. Pessoas com transtorno depressivo maior apresentam 
-         humor deprimido durante a maior parte do tempo, quase diariamente, com sensação de vazio, tristeza e falta 
-         de esperança.
-
-         Distimia – é um transtorno do humor que consiste nos mesmos problemas presentes na depressão, com sintomas 
-         menos graves porém mais duradouros. Afeta cerca de 3% das pessoas e os sintomas de tristeza e perda de 
-         interesse por atividades dura mais que 2 anos.
-
-         Transtorno bipolar – este tipo é caracterizado pela alteração de humor intensa, variando entre estar bem 
-         e passando para uma fase de depressão ou mania. O transtorno bipolar é mais comum entre os 20 e 30 anos. 
-
-         Depressão sazonal – este tipo de depressão é caracterizado pela presença dos sintomas da depressão em 
-         determinadas épocas do ano, como o inverno.
- 
-         Depressão psicótica – ocorre quando a pessoa experiencia delírios e alucinações junto dos sintomas da depressão. 
-
-         Depressão pós-parto – este tipo de depressão acontece quando a mulher tem sintomas do distúrbio até seis meses 
-         depois do nascimento do bebê. Caso persistam por mais tempo, a mulher deve conversar com o médico sobre uma 
-         possibilidade de tratamento que não afete a amamentação. 
-
-         Depressão atípica – ocorre quando os sintomas da depressão se tornam mais intensos após a pessoa passar por uma 
-         experiência positiva. 
-
-         Transtorno disfórico pré-menstrual – é uma forma mais grave dos sintomas da síndrome pré-menstrual. Normalmente, 
-         eles costumam passar quando a mulher entra no período da menstruação.
-
- utter_depressao_sintomas:
-     - text: |
-         Os sinais e sintomas da depressão podem variar bastante de pessoa para pessoa, inclusive na frequência e intensidade 
-         com que aparecem. Entre os mais comuns estão
-
-         - Tristeza constante;
-         - Perda de interesse por atividades que antes apreciava;
-         - Insatisfação com acontecimento da vida; 
-         - Irritabilidade;
-         - Insônia e cansaço constante;
-         - Mudança nos hábitos alimentares; 
-         - Perda de peso;
-         - Maior frequência no uso de substâncias, como drogas e álcool.
-
- utter_depressao_teste:
-      - text: |
-          Conhecido como questionário Wakefield, este teste ajuda a identificar se você pode estar com o distúrbio. 
-          Para conseguir o resultado, basta somar os valores que estão na frente de cada resposta. 
+  - cumprimentar
+  - antidepressivo
+slots: 
+  idade: 
+    type: unfeaturized
+  local: 
+    type: unfeaturized
+  nome: 
+    type: text
+templates: 
+  
+  utter_depressao_adolescente: 
+    - 
+      text: |
+          A adolescência é um período difícil, turbulento, 
+          com variações do humor e crises emocionais. Os jovens 
+          passam por várias situações novas e pressões sociais 
+          quando se aproximam da idade adulta e, para alguns, 
+          este período de transição é muito difícil.
           
-          ✔ Importante - responda como está se sentindo no momento. Não dê as respostas de como você estava se 
-          sentindo ou como espera se sentir.
-
-         A) Sinto-me miserável e triste.
-             (0) Não, absolutamente   (1) Não, não muito
-             (2) Sim, algumas vezes   (3) Sim, definitivamente
+          Não existe uma única causa para a depressão. O distúrbio 
+          normalmente se dá com a combinação de diversos 
+          fatores internos e externos, como a dificuldade em lidar 
+          com situações desafiadoras e até a desregulação 
+          dos hormônios que controlam as emoções.
           
-         B) Acho fácil fazer as coisas que eu costumava fazer.
-             (0) Sim, definitivamente   (1) Sim, algumas vezes
-             (2) Não, não muito         (3) Não, absolutamente
+          Os sintomas da depressão em jovens geralmente são semelhantes 
+          aos dos adultos deprimidos, veja quais são:
+          
+          Falta de entusiasmo, energia ou motivação;
+          Afastamento ou isolamento de atividades sociais;
+          Confusão ou dificuldade em tomar decisões;
+          Baixo rendimento escolar;
+          Problemas alimentares;
+          Insônia e distúrbios de sono;
+          Baixa autoestima ou sensação de culpa;
+          Abuso de álcool e/ou drogas;
+          Ansiedade ou medos;
+          Inquietação ou irritabilidade.
+          
+          Em geral, a depressão afeta o humor, o pensamento, a disposição 
+          e/ ou o comportamento de uma pessoa, mas normalmente há uma combinação 
+          de vários sintomas. Uma pessoa jovem deprimida pode mostrar-se triste, 
+          melancólica ou preocupada. A pessoa geralmente perde o interesse ou 
+          o prazer por atividades, coisas ou pessoas que anteriormente gostava e 
+          se afasta de relações sociais.
+          
+          O RISCO DE SUICÍDIO EM JOVENS COM DEPRESSÃO
+          
+          Nos casos mais graves, a depressão pode levar ao suicídio, que já é 
+          a segunda principal causa de morte em jovens entre 15 e 29 anos. 
+          Fique atento aos sinais que indicam o risco de suicídio em jovens com depressão:
+          
+          ✔ Falar sobre morte, suicídio ou provocar ferimentos em si próprio;
+          ✔ Pânico ou ansiedade crônicos;
+          ✔ Insônia constante;
+          ✔ Alterações na personalidade ou aparência;
+          ✔ Alterações nos hábitos de sono ou alimentares;
+          ✔ Baixo rendimento escolar;
+          ✔ Distribuir objetos pessoais.
+           
+          TRATAMENTO PARA DEPRESSÃO EM JOVENS
+          
+          Felizmente, a depressão em jovens responde bem a vários 
+          programas de tratamento. Pais, professores e outras pessoas 
+          devem aprender a reconhecer a depressão e agir no momento 
+          em que a ajuda se faz necessária. O primeiro passo é procurar 
+          a experiência de um profissional capacitado, como um psiquiatra.
+          
+          Juntamente com o adolescente, os familiares e o médico podem 
+          chegar a uma decisão sobre o tratamento mais adequado para o 
+          jovem. Apenas um médico pode indicar o início do tratamento 
+          com medicamentos, como os antidepressivos. 
+          NUNCA SE AUTOMEDIQUE!!!
+          
+          Se você suspeitar que um adolescente está sofrendo de depressão, 
+          é possível ajudá-lo.  No entanto, na maioria das vezes, os 
+          jovens não reconhecem que estão deprimidos. 
+          Eles podem relutar em assumir sentimentos de tristeza ou 
+          desesperança. Para alguém que deseja ajudar, é preciso carinho 
+          e intuição, bem como saber escutar.
+  utter_depressao_ansiedade: 
+    - 
+      text: |
+          É bem comum que uma pessoa depressiva também possa estar 
+          ansiosa e vice-versa. Por isso, fazer esse diagnóstico 
+          e diferenciar uma da outra é uma tarefa complexa, que precisa 
+          levar em conta história familiar, experiências passadas e o 
+          ambiente no qual o paciente vive. Depois de analisar todos 
+          esses fatores, o médico indica o tratamento mais adequado. 
+          Nos dois casos, a primeira recomendação costuma ser medicação 
+          junto com psicoterapia. Entretanto, indivíduos depressivos 
+          são mais propensos a precisar de remédios do que os ansiosos, 
+          isso porque a terapia ajudar, mas não consegue prevenir 
+          novos episódios e nem curar a depressão . Em geral, ansiedade 
+          e depressão são condições que exigem tratamento a longo prazo 
+          e merecem atenção adequada. Praticar a empatia, ou seja, 
+          colocar-se no lugar do outro e entender pelo que a pessoa está 
+          passando, é uma das formas de dar apoio a pessoas que sofrem 
+          com esses transtornos e ajudá-las a viver de uma maneira mais 
+          plena e feliz.
+  utter_depressao_causa: 
+    - 
+      text: |
+          Existem diversas causas possíveis para a depressão. Não existe 
+          uma resposta definitiva do motivo da pessoa desenvolver este 
+          distúrbio. A depressão pode se manifestar sem razão aparente, 
+          até mesmo em quem parece estar em um bom momento de vida. 
+          Alguns fatores possíveis para o desenvolvimento do distúrbio são:
+          
+          ✔ Características individuais – a depressão pode se desenvolver 
+            por fatores genéticos da pessoa ou até mesmo após algum evento 
+            estressante/traumatizante, como a perda de um ente querido ou 
+            um problema no emprego. 
+          
+          ✔ Fatores químicos e fisiológicos da depressão – podem ocorrer 
+            por conta do desequilíbrio das substâncias químicas do cérebro, 
+            conhecidas como neurotransmissores.
+          
+          ✔ Medicamentos e outras doenças – alguns podem ter como reação 
+            adversa o desenvolvimento do distúrbio. Além disso, algumas 
+            doenças podem causar sinais e sintomas parecidos com os da depressão.
+  utter_depressao_criança: 
+    - 
+      text: |
+          Nem os pequenos estão livres da depressão. Apesar de não 
+          muito frequente as estatísticas mostram que a prevalência 
+          da doença está entre 0,2% a 7,5% das crianças brasileiras 
+          abaixo de 14 anos – é preciso saber que nelas, os sinais 
+          da doença são bem diferentes dos de adultos. Porque as 
+          crianças podem ser jovens demais para nomear seus sentimentos, 
+          elas podem somatizar o transtorno, passando a reclamar de dores 
+          em diversas partes do corpo.De acordo com a Associação 
+          Brasileira de Psiquiatria (ABP), a depressão normalmente 
+          é diagnosticada depois dos cinco anos de dade, e as causas são 
+          multifatoriais, como vulnerabilidade do sistema nervoso central, 
+          fatores genéticos e ambientais. 
 
-         C) Fiquei com uma sensação de medo ou pânico aparentemente sem nenhuma razão.
-             (0) Não, absolutamente   (1) Não, não muito
-             (2) Sim, algumas vezes   (3) Sim, definitivamente  
-             
-         D) Falo choramingando ou tenho exatamente esta impressão.
-            (0) Não, absolutamente   (1) Não, não muito
-            (2) Sim, algumas vezes   (3) Sim, definitivamente
+          Não há uma causa única para ocasionar um quadro depressivo. 
+          O diagnóstico, porém, não é simples como o dos adultos. 
+          A apresentação dos sintomas da depressão depende da idade e 
+          do nível de maturidade da criança. É importante lembrar que 
+          o que é comportamento normal e o que caracteriza a doença 
+          dependem do contexto em que os sintomas aparecem, e quais 
+          foram os prejuízos causados por eles, diz o psiquiatra. 
+          Por exemplo, manha é um dos sintomas de depressão infantil, 
+          mas o fato da criança ser manhosa, por si só, não indica um 
+          quadro depressivo. Mas se a manha está associada a outros 
+          fatores, a suspeita pode se justificar.
+          ✔ Reclama de dores de cabeça ou enxaqueca
+          ✔ Apresenta tristeza constante 
+          ✔ Relata ter dores abdominais
+          ✔ Faz xixi na cama com frequência
+          ✔ Eventualmente há vazamento de fezes sem que a criança dê conta
+          ✔ Demonstra irritabilidade
+          ✔ Aparenta ter perdido o prazer de fazer coisas que antes gostava
+          ✔ Apresenta manha
+          ✔ Tem dificuldade de ficar longe dos pais
+          ✔ Sofre com fobias diversas
+          ✔ Fica indecisa
+          ✔ Tem grandes variações de peso
+          ✔ Passa a comer menos ou mais do que o habitual
+          ✔ Tem dificuldade de concentração
+          ✔ Prefere se isolar a brincar com outras crianças
+          ✔ Se mostra cansada com frequência
+          ✔ Não quer mais ir à escola
 
-         E) Ainda aprecio as coisas que eu costumava fazer.
-            (0) Sim, definitivamente   (1) Sim, algumas vezes
-            (2) Não, não muito         (3) Não, absolutamente
+          De modo geral, a criança vai se retraindo e muitas vezes 
+          os pais não percebem que algo errado está acontecendo. 
+          As crianças menores têm maior dificuldade de entender a 
+          subjetividade dos sentimentos e frequentemente exteriorizam 
+          a tristeza por meio de sintomas físicos. É nessa hora que 
+          os pais devem se munir de uma dose extra de amor para compreender 
+          o momento delicado em que a criança está passando e oferecer 
+          apoio para entender o problema. Lembre-se que a manha ou 
+          irritabilidade nem sempre são problemas de comportamento, mas que, 
+          se associados a outros sintomas, podem indicar depressão infantil. 
+          E que, nessa hora, o que a criança mais precisa – além do 
+          acompanhamento médico – é da presença dos pais. Um olhar 
+          atento às mudanças repentinas de comportamento da criança é 
+          fundamental para decidir procurar um especialista e relatar 
+          o ocorrido. A partir de então, o profissional poderá 
+          investigar se há algo errado e recomendar o tratamento adequado.
+  utter_depressao_cura: 
+    - 
+      text: |
+          Atualmente fala-se em remissão completa dos sintomas, ou seja, 
+          a pessoa tem uma vida normal, as mesmo nesses casos não significa 
+          que a doença foi curada. Em geral, é necessário permanecer 
+          com manutenção do tratamento em longo prazo.
+  utter_depressao_diagnostico: 
+    - 
+      text: |
+          O diagnóstico da depressão é clínico, feito pelo médico após coleta 
+          completa da história do paciente e realização de um exame do estado 
+          mental. Não existe exames laboratoriais específicos para diagnosticar 
+          depressão.
+  utter_depressao_dieta: 
+    - 
+      text: |
+          A alimentação pode ajudar a produzir mais serotonina, aumentando o 
+          bom humor e ajudando no combate da depressão, entretanto, vale lembrar 
+          que ela não substitui o tratamento da doença, com a intervenção 
+          medicamentosa e terapia. Para a produção cerebral da serotonina há 
+          necessidade de "matérias primas" (chamadas de cofatores) fundamentais 
+          para sua síntese, como exemplos, triptofano (aminoácido), magnésio, 
+          cálcio (minerais), vitamina B6, ácido fólico (vitaminas).  
 
-         F) Estou agitado e não consigo permanecer quieto.
-            (0) Não, absolutamente  (1) Não, não muito
-            (2) Sim, algumas vezes  (3) Sim, definitivamente
+          1. Frutas 
+          Melancia, abacate, mamão, banana, tangerina e limão são conhecidos como 
+          agentes do bom humor. Todas estas frutas são ricas em triptofano, aminoácido 
+          que ajuda na produção de serotonina. É recomendado o consumo de três a cinco
+          porções de frutas todos os dias. 
 
-         G) Consigo adormecer facilmente sem as pílulas para dormir.
-            (0) Sim, definitivamente  (1) Sim, algumas vezes
-            (2) Não, não muito        (3) Não, absolutamente
+          2. Leite e iogurte desnatado
+          Eles são ótimas fontes de cálcio, mineral que elimina a tensão e depressão. 
+          O cálcio ajuda a reduzir e controlar o nervosismo e a irritabilidade. Ele 
+          participa também das contrações musculares, dos batimentos cardíacos e da 
+          transmissão de impulsos nervosos e regulariza a pressão arterial. É recomendado
+          o consumo de 2 a 3 porções por dia. 
+          
+          3. Laranja e maçã
+          Elas ganham destaque porque fornecem ácido fólico, cujo consumo está associado 
+          a menor prevalência de sintomas depressivos.  Além disso, por ser rica em vitamina 
+          C, a laranja promove o melhor funcionamento do sistema nervoso, garante energia, 
+          ajuda a combater o estresse e previne a fadiga.4. Castanha-do-pará, nozes e 
+          amêndoas Elas são ricas em selênio, um poderoso agente antioxidante, colaborando 
+          para a melhoria dos sintomas de depressão, auxiliando na redução do estresse. 
+          As quantidades diárias recomendadas são duas a três unidades de castanha-do-pará 
+          ou cinco unidades de nozes ou 10 a 12 unidades de amêndoas. Mas também dá para 
+          fazer um mix saboroso dessas oleaginosas. 
 
-         H) Sinto-me ansioso quando saio de casa sozinho.
-            (0) Não, absolutamente   (1) Não, não muito
-            (2) Sim, algumas vezes   (3) Sim, definitivamente
-
-         I) Perdi o interesse pelas coisas em geral.
-            (0) Não, absolutamente   (1) Não, não muito
-            (2) Sim, algumas vezes  (3) Sim, definitivamente
-
-         J) Fico cansado sem motivo algum.
-            (0) Não, absolutamente   (1) Não, não muito
-            (2) Sim, algumas vezes   (3) Sim, definitivamente
-
-         K) Estou mais irritável do que o usual.
-            (0) Não, absolutamente   (1) Não, não muito
-            (2) Sim, algumas vezes   (3) Sim, definitivamente
-
-         L) Acordo de madrugada e depois durmo mal o resto da noite.
-            (0) Não, absolutamente   (1) Não, não muito
-            (2) Sim, algumas vezes   (3) Sim, definitivamente
-
-         Resultados
-            15 pontos ou mais – caso tenha sido este o seu resultado no teste, é recomendado que você 
-            busque um médico para avaliar se você tem depressão.
-
-            Menos de 15 pontos – se você não tiver alcançado este valor, mas mesmo assim tem alguns dos 
-            sinais e sintomas da depressão, converse com o médico. 
-
- utter_depressao_familia:
-     - text: |
-          Quando se convive com uma pessoa que está com depressão ou está desenvolvendo o distúrbio, 
-          é possível notar algumas mudanças de hábitos e comportamentos que indicam que isso está acontecendo. 
-          Mesmo que cada um tenha formas únicas de reagir nestas situações, os sinais e sintomas de depressão
-          mais comuns são
-        
+          5. Banana e abacate 
+          A banana é rica em carboidrato (hidratos de carbono), potássio e magnésio. 
+          ambém é fonte de vitamina B6, que produz energia. A fruta diminui a ansiedade 
+          e ajuda a ter um sono tranquilo. Tão bom quanto, o abacate é outra ótima opção, 
+          e antes de dormir. Consuma duas colheres de chá da fruta pura (sem açúcar ou 
+          adoçante) todos os dias antes de se deitar. 6. Ovos Eles são uma boa fonte de 
+          tiamina e a niacina (vitaminas do complexo B), que colaboram com o bom humor. 
+          O recomendado é uma unidade por dia, no máximo. Quem tem colesterol alto deve 
+          se preocupar com o consumo em excesso, e evitar, principalmente a versão frita. 
+          
+          7. Mel 
+          Esse alimento estimula a produção de serotonina, neurotransmissor responsável 
+          pela sensação de prazer e bem-estar. Para usufruir dos benefícios, duas colheres 
+          de sobremesa, ao dia, são suficientes.
+          
+          8. Carnes magras e peixes
+          O triptofano, presentes nestas fontes de proteína, ajuda no combate da depressão 
+          e melhora o humor, pois aumenta a produção de serotonina, que exerce grande 
+          influência no estado de humor, pois é capaz de reduzir a sensação de dor, diminuir 
+          o apetite, relaxar, criar a sensação de prazer e bem-estar e até induzir 
+          e melhorar o sono. A recomendação entreé de uma ou duas porções por dia, 
+          principalmente de peixes como atum e salmão.
+          
+          9. Carboidratos complexos 
+          Eles ajudam o organismo a absorver triptofano e estimulam a produção do 
+          neurotransmissor serotonina, que ajuda a reduzir as sensações de depressão. 
+          Uma alimentação pobre em carboidratos, por vários dias, pode levar a alterações 
+          de humor e depressão. Alimentos fontes de carboidratos são os pães, 
+          cereais integrais (trigo, arroz). A recomendação é de 6 a 9 porções diárias. 
+          
+          10. Aveia e centeio 
+          Os dois são ricos em vitaminas do complexo B e vitamina E. Estes nutrientes 
+          possuem grande importância, pois, melhoram o funcionamento do intestino, 
+          combatem a ansiedade e a depressão. A recomendação é de, pelo menos, três 
+          colheres de sopa cheia por dia. 11. Folhas verdes Estudos mostram que uma a
+          limentação com consumo elevado de folato (importante vitamina do complexo B) 
+          está associada a menor  prevalência de sintomas depressivos. Um dos alimentos 
+          ricos em folato são as hortaliças folhosas verde-escuras (espinafre, brócolis, 
+          alface). Algumas pesquisas mostram que indivíduos deprimidos podem apresentar 
+          baixos níveis de vitamina B12, levando a diminuição do folato e o desequilíbrio 
+          do metabolismo dos neurotransmissores do cérebro associados ao controle do humor. 
+          O recomendado é a ingestão diária de três a cinco porções por dia.  
+          
+          12. Soja 
+          Ela é rica em magnésio que é o segundo mineral mais abundante no nosso 
+          organismo e desempenha um papel fundamental na energia das células. Sua 
+          deficiência pode resultar em falta de energia. O magnésio ajuda a reduzir 
+          a fadiga e aumentar os níveis de energia. Esse mineral combate o estresse 
+          porque tem propriedades tranquilizantes naturais, principalmente quando 
+          combinadas com cálcio.
+  utter_depressao_drogas: 
+    - 
+      text: |
+          Pessoas que sofrem de transtornos de humor, como a depressão, são mais 
+          propensas a serem dependentes de álcool e outras drogas ao longo da 
+          vida segundo estudos. E é fácil entender o motivo, pois é comum que 
+          aqueles que tenham a doença procurem nas drogas alívio para seu 
+          sofrimento emocional e para sintomas como tristeza, desesperança e 
+          falta de energia. Mas, essa é uma atitude que pode ter efeito oposto 
+          ao desejado, pois o uso de drogas frequentemente torna a depressão 
+          muito pior.
+          
+          Ainda que as drogas possam trazer uma gratificação imediata, no 
+          momento seguinte, logo que o efeito passa, elas provocam ou 
+          agravam os sintomas depressivos. A própria depressão causada 
+          pela falta da substância no organismo pode fazer com que a 
+          pessoa procure novamente o álcool e outras drogas para se livrar 
+          dos sentimentos negativos.
+          
+          O uso repetido de uma substância por um longo tempo pode causar 
+          abuso e dependência. Nesse estágio, a pessoa não consegue interromper 
+          o consumo, ainda que possa reconhecer os danos que ela traz.
+  utter_depressao_familia: 
+    - 
+      text: |
+          Quando se convive com uma pessoa que está com depressão ou está 
+          desenvolvendo o distúrbio, é possível notar algumas mudanças de 
+          hábitos e comportamentos que indicam que isso está acontecendo. 
+          Mesmo que cada um tenha formas únicas de reagir nestas situações,
+          os sinais e sintomas de depressão mais comuns são:
           ✔ Tristeza constante;
           ✔ Perda de interesse por atividades que antes apreciava;
           ✔ Insatisfação com acontecimento da vida; 
@@ -271,694 +384,385 @@ templates:
           ✔ Mudança nos hábitos alimentares; 
           ✔ Perda de peso;
           ✔ Maior frequência no uso de substâncias, como drogas e álcool.
-
-         Atenção: os sinais e sintomas da depressão podem variar bastante. A presença de um ou mais 
-         deles não significa que exista o transtorno. Porém, se eles durarem semanas ou até meses, 
-         é preciso ir a um médico para que ele faça o diagnóstico e, se for o caso, indique o melhor 
-         tratamento. 
-
- utter_depressao_pessoas:
-     - text: |
-         Qualquer pessoa pode ter depressão. Mais de 300 milhões de pessoas vivem com depressão no mundo 
-         todo, segundo a Organização Mundial da Saúde. Apenas o Brasil tem cerca de 11,5 milhões de pessoas 
-         diagnosticadas com a doença.
          
- utter_depressão_criança:
-     - text: |
-          Nem os pequenos estão livres da depressão. Apesar de não muito frequente – as estatísticas mostram 
-          que a prevalência da doença está entre 0,2% a 7,5% das crianças brasileiras abaixo de 14 anos[1] – 
-          é preciso saber que nelas, os sinais da doença são bem diferentes dos de adultos. Porque as crianças 
-          podem ser jovens demais para nomear seus sentimentos, elas podem somatizar o transtorno, passando a 
-          reclamar de dores em diversas partes do corpo.
-
-          De acordo com estudo e com o psiquiatra Luis Altenfelder, membro da Associação Brasileira de 
-          Psiquiatria (ABP), a depressão normalmente é diagnosticada depois dos cinco anos de idade, e as 
-          causas são multifatoriais, como vulnerabilidade do sistema nervoso central, fatores genéticos e 
-          ambientais[2]. "Não há uma causa única para ocasionar um quadro depressivo", diz.
-
-          O diagnóstico, porém, não é simples como o dos adultos. "A apresentação dos sintomas da depressão 
-          depende da idade e do nível de maturidade da criança. É importante lembrar que o que é comportamento 
-          normal e o que caracteriza a doença dependem do contexto em que os sintomas aparecem, e quais foram 
-          os prejuízos causados por eles", diz o psiquiatra.
-
-          Por exemplo: manha é um dos sintomas de depressão infantil. Mas o fato da criança ser manhosa, 
-          por si só, não indica um quadro depressivo. Mas se a manha está associada a outros fatores, a 
-          suspeita pode se justificar.
-
-            Reclama de dores de cabeça ou enxaqueca
-            Apresenta tristeza constante
-            Relata ter dores abdominais
-            Faz xixi na cama com frequência
-            Eventualmente há vazamento de fezes sem que a criança dê conta
-            Demonstra irritabilidade
-            Aparenta ter perdido o prazer de fazer coisas que antes gostava
-            Apresenta manha
-            Tem dificuldade de ficar longe dos pais
-            Sofre com fobias diversas
-            Fica indecisa
-            Tem grandes variações de peso
-            Passa a comer menos ou mais do que o habitual
-            Tem dificuldade de concentração
-            Prefere se isolar a brincar com outras crianças
-            Se mostra cansada com frequência
-            Não quer mais ir à escola
-         
-          De modo geral, a criança vai se retraindo e muitas vezes os pais não percebem que algo errado 
-          está acontecendo. "As crianças menores têm maior dificuldade de entender a subjetividade dos 
-          sentimentos e frequentemente exteriorizam a tristeza por meio de sintomas físicos", diz Altenfelder.
-
-          É nessa hora que os pais devem se munir de uma dose extra de amor para compreender o momento delicado 
-          em que a criança está passando e oferecer apoio para entender o problema. Lembre-se que a manha ou 
-          irritabilidade nem sempre são problemas de comportamento, mas que, se associados a outros sintomas, 
-          podem indicar depressão infantil. E que, nessa hora, o que a criança mais precisa – além do acompanhamento 
-          médico – é da presença dos pais.
-
-          Um olhar atento às mudanças repentinas de comportamento da criança é fundamental para decidir 
-          procurar um especialista e relatar o ocorrido. A partir de então, o profissional poderá investigar 
-          se há algo errado e recomendar o tratamento adequado.  
-
- utter_depressao_adolescente:
-     - text: |
-          A adolescência é um período difícil, turbulento, com variações do humor e crises emocionais. Os jovens 
-          passam por várias situações novas e pressões sociais quando se aproximam da idade adulta e, para alguns, 
-          este período de transição é muito difícil.
-
-          Não existe uma única causa para a depressão. O distúrbio normalmente se dá com a combinação de diversos 
-          fatores internos e externos, como a dificuldade em lidar com situações desafiadoras e até a desregulação 
-          dos hormônios que controlam as emoções.
-
-          Os sintomas da depressão em jovens geralmente são semelhantes aos dos adultos deprimidos, veja quais são:
-
-            Falta de entusiasmo, energia ou motivação;
-            Afastamento ou isolamento de atividades sociais;
-            Confusão ou dificuldade em tomar decisões;
-            Baixo rendimento escolar;
-            Problemas alimentares;
-            Insônia e distúrbios de sono;
-            Baixa autoestima ou sensação de culpa;
-            Abuso de álcool e/ou drogas;
-            Ansiedade ou medos;
-            Inquietação ou irritabilidade.
-
-          Em geral, a depressão afeta o humor, o pensamento, a disposição e/ ou o comportamento de uma pessoa, mas 
-          normalmente há uma combinação de vários sintomas. Uma pessoa jovem deprimida pode mostrar-se triste, 
-          melancólica ou preocupada. A pessoa geralmente perde o interesse ou o prazer por atividades, coisas ou 
-          pessoas que anteriormente gostava e se afasta de relações sociais.
-
-          O RISCO DE SUICÍDIO EM JOVENS COM DEPRESSÃO
-
-          Nos casos mais graves, a depressão pode levar ao suicídio, que já é a segunda principal causa de morte em jovens 
-          entre 15 e 29 anos. Fique atento aos sinais que indicam o risco de suicídio em jovens com depressão
-
-            Falar sobre morte, suicídio ou provocar ferimentos em si próprio;
-            Pânico ou ansiedade crônicos;
-            Insônia constante;
-            Alterações na personalidade ou aparência;
-            Alterações nos hábitos de sono ou alimentares;
-            Baixo rendimento escolar;
-            Distribuir objetos pessoais.
-            
-          TRATAMENTO PARA DEPRESSÃO EM JOVENS
-        
-          Felizmente, a depressão em jovens responde bem a vários programas de tratamento. Pais, professores e 
-          outras pessoas devem aprender a reconhecer a depressão e agir no momento em que a ajuda se faz necessária. 
-          O primeiro passo é procurar a experiência de um profissional capacitado, como um psiquiatra.
-          
-          Juntamente com o adolescente, os familiares e o médico podem chegar a uma decisão sobre o tratamento 
-          mais adequado para o jovem. Apenas um médico pode indicar o início do tratamento com medicamentos, 
-          como os antidepressivos. Nunca se automedique.
-
-          Se você suspeitar que um adolescente está sofrendo de depressão, é possível ajudá-lo. No entanto, 
-          na maioria das vezes, os jovens não reconhecem que estão deprimidos. Eles podem relutar em assumir 
-          sentimentos de tristeza ou desesperança. Para alguém que deseja ajudar, é preciso carinho e intuição, 
-          bem como saber escutar.
-
- utter_depressao_idoso:
-     - text: |
-          A depressão é uma das doenças mentais que mais atinge os idosos. A prevalência da doença e como ela 
-          se manifesta pode variar de acordo com a situação vivida pelo idoso. “Para aqueles que vivem com a 
-          família e estão inseridos na comunidade, a prevalência de sintomas depressivos gira em torno de 15% 
-          da população idosa. Esse número pode dobrar quando nos deparamos com idosos institucionalizados, 
-          que estão em casas de repouso ou asilos. Em pacientes hospitalizados por problemas de saúde, a 
-          prevalência chega a quase 50%”. 
-
-          Especialistas dividem as pessoas que têm depressão na terceira idade em dois grupos. 
-
-          Aqueles que nunca tiveram depressão e passam e ter.
-          Aqueles que já vêm de um quadro de depressão ao longo da vida. 
-          
-          No primeiro caso, o componente hereditário é menor, a doença fica muito mais relacionada a dificuldades 
-          trazidas pelo envelhecimento em si, tais como a problemas cognitivos e quadros demenciais, perda de papel 
-          social e limitações trazidas por doenças físicas. Já o segundo grupo envolve pacientes cujo histórico nos 
-          remete a quadros depressivos prévios, tratados ou não, e que podem apresentar características de cronificação. 
-
-          Clinicamente, uma das principais diferenças entre a depressão que atinge a população idosa frente à que 
-          acomete os mais jovens são as queixas somáticas, muito mais intensas e freqüentes nos mais velhos. “Frequentemente 
-          os sintomas depressivos nesta população traduzem-se por queixas de dores pelo corpo, falta de apetite e insônia, 
-          perda de energia para realizar as tarefas do dia-dia, sendo a tendência ao isolamento e a apatia dois sinais de alerta 
-          para a identificação da doença.Em um primeiro momento, muitas vezes não há a exteriorização de sintomas depressivos 
-          mais clássicos, como tristeza, angústia, crises de choro.
-
-          A depressão não tem uma causa específica, podendo ser desencadeada por uma mistura de fatores biológicos, 
-          psicológicos e sociais. Além de fatores ambientais, inerentes ao envelhecimento, a depressão em idosos pode 
-          se manifestar a partir de uma série de problemas relacionados à terceira idade como o afastamento da família, 
-          a perda do papel social com a aposentadoria, falecimento do cônjuge e solidão. Limitações físicas e fatores 
-          clínicos como AVC, infarto e doenças cardiovasculares também podem contribuir para o desenvolvimento de um 
-          quadro de depressão. 
-
-          Além da qualidade de vida, a doença pode também interferir em aspectos físicos à medida que leva o indivíduo 
-          a uma menor disponibilidade para colocar em prática medidas essenciais para a manutenção de uma boa qualidade 
-          de vida e para controle de outros problemas de saúde, tais como manter uma dieta saudável e praticar exercícios 
-          físicos regularmente. O psiquiatra alerta para o fato de que a depressão dificulta o tratamento de outras 
-          doenças físicas. “Estudos mostram que a depressão tem uma influência muito negativa no prognóstico de pacientes 
-          que sofreram infarto, por exemplo”. 
-
- utter_depressao_tratamento:
-     -text: |
-          A Depressão é uma doença mental de elevada prevalência e é a mais associada ao suicídio, tende a ser crônica 
-          e recorrente, principalmente quando não é tratada.
-
-          O tratamento é medicamentoso e psicoterápico. A escolha do antidepressivo é feita com base no subtipo 
-          da Depressão, nos antecedentes pessoais e familiares, na boa resposta a uma determinada classe de 
-          antidepressivos já utilizada, na presença de doenças clínicas e nas características dos antidepressivos.
-
-          90-95% dos pacientes apresentam remissão total com o tratamento antidepressivo.
-
-          É de fundamental importância a adesão ao tratamento, uma vez interrompido por conta próprio ou uso inadequado 
-          da medicação, pode aumentar significativamente o risco de cronificação.
-
-          O tratamento pode ser realizado na Atenção Primária, nos Centros de Atenção Psicossocial (CAPS) e nos 
-          ambulatórios especializados.
-
-          Terapias alternativas
-
-          Existem formas mais naturais que são ótimas aliadas para complementar o tratamento da depressão, mas que não 
-          devem substituir o tratamento orientado pelo médico. Dentre elas estão:
-
-         ✔  Acupuntura - pode aliviar diversos sintomas associados à esta doença, como dor, ansiedade e insônia;
-         ✔  Meditação - proporciona autoconhecimento e controle dos sentimentos, o que pode melhorar a confiança e 
-            auto-estima;
-         ✔  Atividade física - a prática regular de exercício ajuda a liberar hormônio como serotonina e endorfina, 
-            essenciais no tratamento da depressão, além de melhorar o bem-estar. O exercício em grupo, como um esporte,
-            pode ter ainda mais benefícios, devido a melhora da convivência social;
-         ✔  Reiki - é um técnica que proporciona relaxamento e bem-estar, podendo ser útil para combater sintomas da 
-            depressão;
-         ✔  Alimentação antidepressiva - existem alimentos, como banana, amendoim, aveia e leite, que aumentam os 
-            níveis de triptofano e outras substância, como magnésio, que estimulam a produção de hormônios do bem estar, saiba 
-            quais são os alimentos que ajudam a sair da depressão.
-            Além disso, é recomendado investir em hobbies como música, leitura e atividades em grupo, por exemplo, pois são 
-            atividades que melhoram a auto-estima e a auto-confiança, sendo importantes passos para a cura da depressão. Veja 
-            mais dicas de como melhorar a auto-estima. 
-
- utter_depressao_prevençao:
-     - text: |
+          Atenção os sinais e sintomas da depressão podem variar bastante. 
+          A presença de um ou mais deles não significa que exista o transtorno. 
+          Porém, se eles durarem semanas ou até meses, é preciso ir a um 
+          médico para que ele faça o diagnóstico e, se for o caso, indique o 
+          melhor tratamento.  
+  utter_depressao_idoso: 
+    - 
+      text: |
+          A depressão é uma das doenças mentais que mais atinge os idosos. 
+          A prevalência da doença e como ela se manifesta pode variar de 
+          acordo com a situação vivida pelo idoso. “Para aqueles que vivem 
+          com a família e estão inseridos na comunidade, a prevalência de 
+          sintomas depressivos gira em torno de 15% da população idosa. 
+          Esse número pode dobrar quando nos deparamos com idosos 
+          institucionalizados, que estão em casas de repouso ou asilos. 
+          Em pacientes hospitalizados por problemas de saúde, a prevalência 
+          chega a quase 50%”. Especialistas dividem as pessoas que têm 
+          depressão na terceira idade em dois grupos. Aqueles que nunca 
+          tiveram depressão e passam e ter. Aqueles que já vêm de um quadro 
+          de depressão ao longo da vida. No primeiro caso, o componente 
+          hereditário é menor, a doença fica muito mais relacionada a 
+          dificuldades trazidas pelo envelhecimento em si, tais como a 
+          problemas cognitivos e quadros demenciais, perda de papel social 
+          e limitações trazidas por doenças físicas. Já o segundo grupo envolve 
+          pacientes cujo histórico nos remete a quadros depressivos prévios, 
+          tratados ou não, e que podem apresentar características de cronificação. 
+          Clinicamente, uma das principais diferenças entre a depressão que 
+          atinge a população idosa frente à que acomete os mais jovens são as
+          queixas somáticas, muito mais intensas e freqüentes nos mais velhos. 
+          Frequentemente os sintomas depressivos nesta população traduzem-se 
+          por queixas de dores pelo corpo, falta de apetite e insônia, perda 
+          de energia para realizar as tarefas do dia-dia, sendo a tendência 
+          ao isolamento e a apatia dois sinais de alerta para a identificação 
+          da doença.Em um primeiro momento, muitas vezes não há a exteriorização 
+          de sintomas depressivos mais clássicos, como tristeza, angústia, 
+          crises de choro. A depressão não tem uma causa específica, podendo 
+          ser desencadeada por uma mistura de fatores biológicos, psicológicos 
+          e sociais. Além de fatores ambientais, inerentes ao envelhecimento, 
+          a depressão em idosos pode se manifestar a partir de uma série de 
+          problemas relacionados à terceira idade como o afastamento da 
+          família,  a perda do papel social com a aposentadoria, falecimento 
+          do cônjuge e solidão. Limitações físicas e fatores clínicos como 
+          AVC, infarto e doenças cardiovasculares também podem contribuir 
+          para o desenvolvimento de um  quadro de depressão.  
+          Além da qualidade de vida, a doença pode também interferir em 
+          aspectos físicos à medida que leva o indivíduo a uma menor 
+          disponibilidade para colocar em prática medidas essenciais para 
+          a manutenção de uma boa qualidade  de vida e para controle de outros 
+          problemas de saúde, tais como manter uma dieta saudável e praticar 
+          exercícios físicos regularmente. O psiquiatra alerta para o fato 
+          de que a depressão dificulta o tratamento de outras doenças físicas. 
+          Estudos mostram que a depressão tem uma influência muito negativa 
+          no prognóstico de pacientes que sofreram infarto, por exemplo.
+  utter_depressao_o_que_e: 
+    - 
+      text: |
+          A depressão é um distúrbio mental comum que afeta cerca 
+          de 300 milhões de pessoas no mundo. Ela causa mudanças de 
+          humor, como tristeza profunda e irritabilidade, que podem 
+          durar por semanas ou até mesmo meses. 
+          Até 2020, a depressão será a maior causa de incapacitação 
+          no mundo. É necessário tratamento médico para controlar o 
+          transtorno e recuperar a qualidade de vida.
+  utter_depressao_pessoas: 
+    - 
+      text: |
+          Qualquer pessoa pode ter depressão. Mais de 300 milhões de 
+          pessoas vivem com depressão no mundo todo, segundo a 
+          Organização Mundial da Saúde. Apenas o Brasil tem cerca de 
+          11,5 milhões de pessoas diagnosticadas com a doença.
+  utter_depressao_prevençao: 
+    - 
+      text: |
           Manter um estilo de vida saudável ajuda a prevenir a depressão
-
-         ✔  Ter uma dieta equilibrada;
-         ✔  Praticar atividade física regularmente;
-         ✔  Combater o estresse concedendo tempo na agenda para atividades prazerosas;
-         ✔  Evitar o consumo de álcool;
-         ✔  Não usar drogas ilícitas;
-         ✔  Diminuir as doses diárias de cafeína;
-         ✔  Rotina de sono regular;
-         ✔  Não interromper tratamento sem orientação médica.         
-
-utter_depressao_cura:
-     - text: |
-          Atualmente fala-se em remissão completa dos sintomas, ou seja, a pessoa tem uma vida normal, mas mesmo nesses 
-          casos não significa que a doença foi curada. Em geral, é necessário permanecer com manutenção do tratamento 
-          em longo prazo.  
-
- utter_depressao_profissional:
-     - text: |
-          A depressão é tratada principalmente por médicos e psicólogos. No entanto, o ideal é procurar um psiquiatra 
-          (médico com foco em transtornos mentais) para que ele diagnostique o problema e sua severidade e, então, 
-          recomende os tratamentos mais adequados para cada caso.
-
- utter_depressao_drogas:
-     - text: |
-          Pessoas que sofrem de transtornos de humor, como a depressão, são mais propensas a serem dependentes de 
-          álcool e outras drogas ao longo da vida segundo estudos. E é fácil entender o motivo, pois é comum que 
-          aqueles que tenham a doença procurem nas drogas alívio para seu sofrimento emocional e para sintomas como 
-          tristeza, desesperança e falta de energia. Mas, essa é uma atitude que pode ter efeito oposto ao desejado, 
-          pois o uso de drogas frequentemente torna a depressão muito pior.
-
-          Ainda que as drogas possam trazer uma gratificação imediata, no momento seguinte, logo que o efeito passa, 
-          elas provocam ou agravam os sintomas depressivos. A própria depressão causada pela falta da substância no 
-          organismo pode fazer com que a pessoa procure novamente o álcool e outras drogas para se livrar dos 
-          sentimentos negativos.
-
-          O uso repetido de uma substância por um longo tempo pode causar abuso e dependência. Nesse estágio, a 
-          pessoa não consegue interromper o consumo, ainda que possa reconhecer os danos que ela traz.
-
- utter_depressao_remedios:
-     - text: |
-          Os antidepressivos são medicamentos indicados para tratar a depressão e outros transtornos psicológicos e 
-          exercem a sua ação no sistema nervoso central, apresentando diferentes mecanismos de ação.
-
-          Estes remédios estão indicados para depressão moderada ou grave, quando se manifestam sintomas como tristeza, 
-          angústia, alterações do sono e do apetite, cansaço e sensação de culpa, que interferem no bem-estar da pessoa.    
-
- utter_depressao_suicidio:
-     - text: |
-          O suicídio ao redor do mundo está em queda, mas o Brasil aparece na contramão desses dados. O suicídio está 
-          crescendo no País, principalmente entre os jovens. Hoje, um brasileiro se suicida a cada 46 minutos. Ao ano, 
-          em média 11 mil pessoas tiram a vida no País. 
-
-          O suicídio já é a quarta maior causa de morte entre pessoas de 15 a 29 anos de idade no Brasil. Apesar de mais 
-          comum em idosos, tirar a própria vida vêm crescendo entre os jovens e merece nossa atenção. Os pais devem ficar 
-          atentos a mudanças no comportamento dos filhos. Algumas mudanças são o isolamento social ou familiar, mudanças 
-          bruscas de comportamento, pessimismo e perda ou ganho inesperado de peso
-
-          A depressão não é apenas uma questão emocional, ela também envolve fatores biológicos. Porém, ela é uma doença 
-          tratável e o suicídio é evitável em grande parte dos casos.
-
- utter_depressao_ansiedade:
-     - text: |
-          É bem comum que uma pessoa depressiva também possa estar ansiosa e vice-versa.2 Por isso, fazer esse diagnóstico 
-          e diferenciar uma da outra é uma tarefa complexa, que precisa levar em conta história familiar, experiências 
-          passadas e o ambiente no qual o paciente vive.4
-
-          Depois de analisar todos esses fatores, o médico indica o tratamento mais adequado. Nos dois casos, a primeira 
-          recomendação costuma ser medicação junto com psicoterapia. Entretanto, indivíduos depressivos são mais propensos 
-          a precisar de remédios do que os ansiosos 3,4, porque a terapia ajuda, mas não consegue prevenir novos episódios 
-          e nem cura a depressão 3.
-
-          Em geral, ansiedade e depressão são condições que exigem tratamento a longo prazo e merecem atenção adequada. 
-          Praticar a empatia, ou seja, colocar-se no lugar do outro e entender pelo que a pessoa está passando, é uma 
-          das formas de dar apoio a pessoas que sofrem com esses transtornos e ajudá-las a viver de uma maneira mais plena 
-          e feliz. 
-
- utter_depressao_dieta:
-     - text: |
-          A alimentação pode ajudar a produzir mais serotonina, aumentando o bom humor e ajudando no combate da depressão, 
-          entretanto, vale lembrar que ela não substitui o tratamento da doença, com a intervenção medicamentosa e terapia. 
-          Para a produção cerebral da serotonina há necessidade de "matérias primas" (chamadas de cofatores) fundamentais 
-          para sua síntese, como exemplos, triptofano (aminoácido), magnésio, cálcio (minerais), vitamina B6, ácido fólico (vitaminas) 
-
-          1. Frutas
-          Melancia, abacate, mamão, banana, tangerina e limão são conhecidos como agentes do bom humor. "Todas estas frutas são ricas 
-          em triptofano, aminoácido que ajuda na produção de serotonina", explica a nutricionista Abykeyla Tosatti. É recomendado o 
-          consumo de três a cinco porções de frutas todos os dias. 
-
-          2. Leite e iogurte desnatado
-          Eles são ótimas fontes de cálcio, mineral que elimina a tensão e depressão. "O cálcio ajuda a reduzir e controlar o nervosismo 
-          e a irritabilidade. Ele participa também das contrações musculares, dos batimentos cardíacos e da transmissão de impulsos nervosos 
-          e regulariza a pressão arterial", explica a nutricionista Abykeyla Tosatti. É recomendado o consumo de 2 a 3 porções por dia. 
-
-          3. Laranja e maçã
-          Elas ganham destaque porque fornecem ácido fólico, cujo consumo está associado a menor prevalência de sintomas depressivos. 
-          Além disso, por ser rica em vitamina C, a laranja promove o melhor funcionamento do sistema nervoso, garante energia, ajuda a 
-          combater o estresse e previne a fadiga.
-
-          4. Castanha-do-pará, nozes e amêndoas
-          Elas são ricas em selênio, um poderoso agente antioxidante. Segundo a nutricionista Abykeyla Tosatti, elas colaboram para a 
-          melhoria dos sintomas de depressão, auxiliando na redução do estresse. As quantidades diárias recomendadas são duas a três 
-          unidades de castanha-do-pará ou cinco unidades de nozes ou 10 a 12 unidades de amêndoas. Mas também dá para fazer um mix saboroso 
-          dessas oleaginosas.
-
-          5. Banana e abacate
-          A banana é rica em carboidrato (hidratos de carbono), potássio e magnésio. Também é fonte de vitamina B6, que produz energia. 
-          A fruta diminui a ansiedade e ajuda a ter um sono tranquilo. Tão bom quanto, o abacate é outra ótima opção, e antes de dormir. 
-          Consuma duas colheres de chá da fruta pura (sem açúcar ou adoçante) todos os dias antes de se deitar.
-
-          6. Ovos
-          Eles são uma boa fonte de tiamina e a niacina (vitaminas do complexo B), que colaboram com o bom humor. O recomendado é uma 
-          unidade por dia, no máximo. Quem tem colesterol alto deve se preocupar com o consumo em excesso, e evitar, principalmente a 
-          versão frita.
-
-          7. Mel
-          Esse alimento estimula a produção de serotonina, neurotransmissor responsável pela sensação de prazer e bem-estar. Para usufruir 
-          dos benefícios, duas colheres de sobremesa, ao dia, são suficientes.
-
-          8. Carnes magras e peixes
-          O triptofano, presentes nestas fontes de proteína, ajuda no combate da depressão e melhora o humor, pois aumenta a produção de 
-          serotonina, que exerce grande influência no estado de humor, pois é capaz de reduzir a sensação de dor, diminuir o apetite, relaxar, 
-          criar a sensação de prazer e bem-estar e até induzir e melhorar o sono. A recomendação entreé de uma ou duas porções por dia, 
-          principalmente de peixes como atum e salmão.
-
-          9. Carboidratos complexos
-          Eles ajudam o organismo a absorver triptofano e estimulam a produção do neurotransmissor serotonina, que ajuda a reduzir as 
-          sensações de depressão. Uma alimentação pobre em carboidratos, por vários dias, pode levar a alterações de humor e depressão. 
-          Alimentos fontes de carboidratos são os pães, cereais integrais (trigo, arroz). A recomendação é de 6 a 9 porções diárias.
-
-          10. Aveia e centeio
-          Os dois são ricos em vitaminas do complexo B e vitamina E. Estes nutrientes possuem grande importância, pois, melhoram o 
-          funcionamento do intestino, combatem a ansiedade e a depressão. A recomendação é de, pelo menos, três colheres de sopa cheia por dia.
-
-          11. Folhas verdes
-          Estudos mostram que uma alimentação com consumo elevado de folato (importante vitamina do complexo B) está associada a menor 
-          prevalência de sintomas depressivos. Um dos alimentos ricos em folato são as hortaliças folhosas verde-escuras (espinafre, brócolis, 
-          alface). Algumas pesquisas mostram que indivíduos deprimidos podem apresentar baixos níveis de vitamina B12, levando a diminuição do 
-          folato e o desequilíbrio do metabolismo dos neurotransmissores do cérebro associados ao controle do humor. O recomendado é a ingestão 
-          diária de três a cinco porções por dia.    
-
-          12. Soja
-          Ela é rica em magnésio que é o segundo mineral mais abundante no nosso organismo e desempenha um papel fundamental na energia das 
-          células. Sua deficiência pode resultar em falta de energia. O magnésio ajuda a reduzir a fadiga e aumentar os níveis de energia. 
-          Esse mineral combate o estresse porque tem propriedades tranquilizantes naturais, principalmente quando combinadas com cálcio.  
- 
- utter_depressao_status_agora:
-     - text: |
-          Como esta se sentindo agora? 
-
- utter_depressao_status_semana:
-     - text: |
-          Como vem se sentindo durante semana que passou?
-
- utter_depressao_status_risco:
-     - text: |
+          ✔  Ter uma dieta equilibrada;
+          ✔  Praticar atividade física regularmente;
+          ✔  Combater o estresse concedendo tempo na agenda para atividades prazerosas;
+          ✔  Evitar o consumo de álcool;
+          ✔  Não usar drogas ilícitas;
+          ✔  Diminuir as doses diárias de cafeína;
+          ✔  Rotina de sono regular;
+          ✔  Não interromper tratamento sem orientação médica.
+  utter_depressao_profissional: 
+    - 
+      text: |
+          A depressão é tratada principalmente por médicos e psicólogos. 
+          No entanto, o ideal é procurar um psiquiatra (médico com foco em 
+          transtornos mentais) para que ele diagnostique o problema e sua 
+          severidade e, então, recomendar os tratamentos mais adequados para cada caso.
+  utter_depressao_remedio: 
+    - 
+      text: |
+          Os antidepressivos são medicamentos indicados para tratar a 
+          depressão e outros transtornos psicológicos e exercem a sua ação 
+          no sistema nervoso central, apresentando diferentes mecanismos de ação. 
+          Estes remédios estão indicados para depressão moderada ou grave, quando 
+          se manifestam sintomas como tristeza, angústia, alterações do sono e do 
+          apetite, cansaço e sensação de culpa, que interferem no bem-estar da pessoa.
+  utter_depressao_sintomas: 
+    - 
+      text: |
+          Os sinais e sintomas da depressão podem variar bastante de pessoa para 
+          pessoa, inclusive na frequência e intensidade com que aparecem.
+          Entre os mais comuns estão:
+          
+          ✔ Tristeza constante;
+          ✔ Perda de interesse por atividades que antes apreciava;
+          ✔ Insatisfação com acontecimento da vida; 
+          ✔ Irritabilidade;
+          ✔ Insônia e cansaço constante;
+          ✔ Mudança nos hábitos alimentares; 
+          ✔ Perda de peso;
+          ✔ Maior frequência no uso de substâncias, como drogas e álcool.
+  utter_depressao_status_agora: 
+    - 
+      text: |
+          Como esta se sentindo agora?
+  utter_depressao_risco: 
+    - 
+      text: |
           Precisa conversar melhor com alguem sobre isso?
+  utter_depressao_status_semana: 
+    - 
+      text: |
+          Como vem se sentindo durante semana que passou?
+  utter_depressao_suicidio: 
+    - 
+      text: |
+          O suicídio ao redor do mundo está em queda, mas o Brasil 
+          aparece na contramão desses dados. O suicídio está 
+          crescendo no País, principalmente entre os jovens. 
+          Hoje, um brasileiro se suicida a cada 46 minutos. 
+          Ao ano, em média 11 mil pessoas tiram a vida no País. 
+          
+          O suicídio já é a quarta maior causa de morte entre 
+          pessoas de 15 a 29 anos de idade no Brasil. Apesar de mais 
+          comum em idosos, tirar a própria vida vêm crescendo entre 
+          os jovens e merece nossa atenção. Os pais devem ficar 
+          atentos a mudanças no comportamento dos filhos. Algumas 
+          mudanças são o isolamento social ou familiar, mudanças 
+          bruscas de comportamento, pessimismo e perda ou ganho 
+          inesperado de peso
+          
+          A depressão não é apenas uma questão emocional, ela 
+          também envolve fatores biológicos. Porém, ela é uma doença 
+          tratável e o suicídio é evitável em grande parte dos casos.
+  utter_depressao_teste: 
+    - 
+      text: |
+          Conhecido como questionário Wakefield, este teste ajuda 
+          a identificar se você pode estar com o distúrbio. Para 
+          conseguir o resultado, basta somar os valores que estão 
+          na frente de cada resposta. 
 
- utter_atendimento:
-     - text: |
-          Como posso te ajudar nesse momento?
+          ✔ Importante - responda como está se sentindo no momento. 
+            Não dê as respostas de como você estava se sentindo 
+            ou como espera se sentir. 
 
- utter_quem_e_voce:
-     - text: |
-          Sou um robô desenvolvido com a mais moderna Inteligencia Artificial em código livre na atualidade.
-          Apesar de artificial, não sou superficial. Fui programado para te ajudar ;)         
+            A) Sinto-me miserável e triste.
 
- utter_apresentacao:
-     - text: |
-          Olá, me chamo Viva, sou um assistênte virtual desenvolvido com Inteligência Artificial em código livre com o que há
-          de mais moderno em Marchine Learning. Ainda estou aprendendo para poder te ajudar cada vez mais e melhor. 
-        
- utter_artigos:
-     - text: |
-          Se quiser eu posso te enviar alguns artigos ou videos para saber um pouco mais desse assunto, é só digitar enviar. 
+            (0) Não, absolutamente  (1) Não, não muito (2) Sim, algumas vezes (3) Sim, definitivamente 
+            
+            B) Acho fácil fazer as coisas que eu costumava fazer.
+            (0) Sim, definitivamente (1) Sim, algumas vezes (2) Não, não muito (3) Não, absolutamente
+            
+            C) Fiquei com uma sensação de medo ou pânico aparentemente sem nenhuma razão. 
+            (0) Não, absolutamente  (1) Não, não muito  (2) Sim, algumas vezes (3) Sim, definitivamente  
+            
+            D) Falo choramingando ou tenho exatamente esta impressão.
+            (0) Não, absolutamente (1) Não, não muito (2) Sim, algumas vezes (3) Sim, definitivamente
+            
+            E) Ainda aprecio as coisas que eu costumava fazer.
+            (0) Sim, definitivamente (1) Sim, algumas vezes (2) Não, não muito  (3) Não, absolutamente
+            
+            F) Estou agitado e não consigo permanecer quieto.
+            (0) Não, absolutamente (1) Não, não muito (2) Sim, algumas vezes (3) Sim, definitivamente
+            
+            G) Consigo adormecer facilmente sem as pílulas para dormir.
+            (0) Sim, definitivamente (1) Sim, algumas vezes (2) Não, não muito (3) Não, absolutamente
+            
+            H) Sinto-me ansioso quando saio de casa sozinho.
+            (0) Não, absolutamente (1) Não, não muito (2) Sim, algumas vezes (3) Sim, definitivamente
+            
+            I) Perdi o interesse pelas coisas em geral.
+            (0) Não, absolutamente (1) Não, não muito (2) Sim, algumas vezes (3) Sim, definitivamente
+            
+            J) Fico cansado sem motivo algum.
+            (0) Não, absolutamente (1) Não, não muito (2) Sim, algumas vezes (3) Sim, definitivamente
+            
+            K) Estou mais irritável do que o usual.
+            (0) Não, absolutamente (1) Não, não muito (2) Sim, algumas vezes (3) Sim, definitivamente
+            
+            L) Acordo de madrugada e depois durmo mal o resto da noite.
+            (0) Não, absolutamente (1) Não, não muito (2) Sim, algumas vezes (3) Sim, definitivamente
+            
+            Resultados
 
- utter_pesquisa:
-     - text: |
-          Só um minuto, vou pesquisar ;)
+            15 pontos ou mais – caso tenha sido este o seu resultado no teste, 
+            é recomendado que você busque um médico para avaliar se você tem depressão.
+            
+            Menos de 15 pontos – se você não tiver alcançado este valor, mas mesmo 
+            assim tem alguns dos sinais e sintomas da depressão, converse com o médico.
+  utter_depressao_tipos: 
+    - 
+      text: |
+          Os sinais e sintomas mais comuns podem surgir em diferentes 
+          tipos de depressão. Identificar corretamente 
+          o tipo ajuda a definir qual o melhor tratamento para o 
+          caso. Entre os principais tipos de depressão estão:
+          
+          Transtorno depressivo maior – é um transtorno mental 
+          que caracteriza-se por sintomas de desânimo, tristeza, 
+          falta de vontade, fadiga, choro fácil, falta de prazer, 
+          dificuldade de concentração, mudanças no apetite, 
+          insônia, perda da libido, entre outras manifestações. 
+          Pessoas com transtorno depressivo maior apresentam 
+          humor deprimido durante a maior parte do tempo, quase 
+          diariamente, com sensação de vazio, tristeza e falta 
+          de esperança.
+          
+          Distimia – é um transtorno do humor que consiste nos 
+          mesmos problemas presentes na depressão, com sintomas 
+          menos graves porém mais duradouros. Afeta cerca de 3% 
+          das pessoas e os sintomas de tristeza e perda de 
+          interesse por atividades dura mais que 2 anos.
+          
+          Transtorno bipolar – este tipo é caracterizado pela 
+          alteração de humor intensa, variando entre estar bem 
+          e passando para uma fase de depressão ou mania. O 
+          transtorno bipolar é mais comum entre os 20 e 30 anos. 
+          
+          Depressão sazonal – este tipo de depressão é caracterizado 
+          pela presença dos sintomas da depressão em determinadas 
+          épocas do ano, como o inverno.
+          
+          Depressão psicótica – ocorre quando a pessoa experiencia 
+          delírios e alucinações junto dos sintomas da depressão. 
+          
+          Depressão pós-parto – este tipo de depressão acontece 
+          quando a mulher tem sintomas do distúrbio até seis meses 
+          depois do nascimento do bebê. Caso persistam por mais tempo, 
+          a mulher deve conversar com o médico sobre uma 
+          possibilidade de tratamento que não afete a amamentação. 
+          
+          Depressão atípica – ocorre quando os sintomas da depressão 
+          se tornam mais intensos após a pessoa passar por uma 
+          experiência positiva. 
+          
+          Transtorno disfórico pré-menstrual – é uma forma mais 
+          grave dos sintomas da síndrome pré-menstrual. Normalmente, 
+          eles costumam passar quando a mulher entra no período da 
+          menstruação.
+  utter_depressao_tratamento: 
+    - 
+      text: |
+          A Depressão é uma doença mental de elevada prevalência e é 
+          a mais associada ao suicídio, tende a ser crônica 
+          e recorrente, principalmente quando não é tratada. O tratamento 
+          é medicamentoso e psicoterápico. A escolha do 
+          antidepressivo é feita com base no subtipo da Depressão, 
+          nos antecedentes pessoais e familiares, na boa resposta 
+          a uma determinada classe de antidepressivos já utilizada, 
+          na presença de doenças clínicas e nas características 
+          dos antidepressivos. 90-95% dos pacientes apresentam remissão 
+          total com o tratamento antidepressivo. É de fundamental 
+          importância a adesão ao tratamento, uma vez interrompido por 
+          conta próprio ou uso inadequado da medicação, pode 
+          aumentar significativamente o risco de cronificação. O 
+          tratamento pode ser realizado na Atenção Primária, nos 
+          Centros de Atenção Psicossocial (CAPS) e nos ambulatórios 
+          especializados.Terapias alternativas. Existem formas mais 
+          naturais que são ótimas aliadas para complementar o tratamento 
+          da depressão, mas que não devem substituir o tratamento orientado 
+          pelo médico. Dentre elas estão:
+          ✔  Acupuntura - pode aliviar diversos sintomas associados à esta 
+             doença, como dor, ansiedade e insônia; 
+          ✔  Meditação - proporciona autoconhecimento e controle dos sentimentos, 
+             o que pode melhorar a confiança e a auto-estima;
+          ✔  Atividade física - a prática regular de exercício ajuda a liberar 
+             hormônio como serotonina e endorfina, essenciais no 
+             tratamento da depressão, além de melhorar o bem-estar. 
+             O exercício em grupo, como um esporte, pode ter ainda mais benefícios, 
+             devido a melhora da convivência social;
+          ✔  Reiki - é um técnica que proporciona relaxamento e bem-estar, podendo 
+             ser útil para combater sintomas da depressão;
+          ✔  Alimentação antidepressiva - existem alimentos, como banana, amendoim, 
+             aveia e leite, que aumentam os quais são os alimentos que ajudam a 
+             sair da depressão. Além disso, é recomendado investir em hobbies 
+             como música, leitura e atividades em grupo, por exemplo, pois são  
+             atividades que melhoram a auto-estima e a auto-confiança, sendo 
+             importantes passos para cura da depressão. Veja mais dicas de como 
+             melhorar a auto-estima.   
+    
+  utter_privacidade: 
+    - 
+      text: |
+          Nao se preocupe, eu não coleto e nem armazeno nenhum dado que identifique 
+          você. Apenas informações genéricas são analisados para melhorar o meu 
+          aprendizado e atendimento , entretanto esses dados não podem ser 
+          correlacionados a nenhuma pessoa.
+          
+          Seu direito a privacidade está garantido ;) 
 
- utter_conectar:
-     - text: |
-          Aguarde um instante, vou conectar com o servidor.
+  utter_quem_e_voce: 
+    - 
+      text: |
+          Sou um robô desenvolvido com a mais moderna Inteligencia Artificial 
+          em código livre na atualidade.
+          Apesar de artificial, não sou superficial. Fui programado para te ajudar ;)   
 
- utter_privacidade:
-     - text: |
-        Nao se preocupe, eu não coleto e nem armazeno nenhum dado que identifique você. Apenas informações genéricas são analisados para
-        melhorar o meu aprendizado e atendimento , entretanto esses dados não podem ser correlacionados a nenhuma pessoa.
-        Seu direito a privacidade está garantido ;)
- utter_nome:
-     - text: |
-          Como voce prefere ser chamado? Não precisa ser seu nome de verdade.
+  utter_triste: 
+    - 
+      text: |
+          Confie, a vida é um processo de aprendizado constante. Apesar de nem sempre 
+          conseguirmos compreender,tudo é para o crescimento a amadurecimento. Momentos 
+          difíceis são parte da experiência de todo ser humano.
+          Tenho certeza lógica que você ficará bem ;)   
 
- utter_local:
-     - text: |
-          Em que cidade voce mora? Eu pergunto isso, porque assim posso verificar ajuda mais próxima a você.
-
- utter_idade:
-     - text: |
-          Qual a sua idade? Isso é importante saber para poder te direcionar a melhor resposta conforme sua faixa etária.         
-
- utter_avaliacao:
-     - text: |
-          Como você avalia o meu atendimento? Suas críticas me ajudarão a melhorar cada vez mais no meu objetivo de ajudar!
-
- utter_elogio:
-     - text: |
-          É um prazer poder te ajudar, é pra isso que fui programado ;)
-
- utter_ajuda:
-     - text: |
-          Você esta buscando ajuda para si mesmo ou para outra pessoa?
-
- utter_idade2:
-     - text: |
-          Qual a idade da pessoa que precisa de ajuda?
-
- utter_idade3:
-     - text: |
-          Qual a sua idade?          
-
- utter_tempo:
-     - text: |
-          Quanto tempo tem observado esses sinais ou sintomas?
-
-  utter_diga_mais:
-    - text: |
-        Por enquanto, só entendo perguntas curtas e completas.
-        Como por exemplo "o que é depressão?".
-        Por favor, pergunte de outro jeito :)
-
-  utter_elogios:
-    - text: |
-          Obrigada! É sempre bom dar e receber elogios :P
-
-  utter_cumprimentar:
-    - text: |
-          Olá, seja muito bem vindo(a) 
-          Eu sou Viva, um assistente virtual desenvolvido com Inteligência Artificial.
-          Espero poder te ajudar com informações e orientações a respeito de depressão.
-          Para saber como você pode interagir comigo basta escrever meajuda.
-
-  utter_meajuda:
-    - text: |
+  utter_meajuda: 
+    - 
+      text: |
           Eu ainda não consigo entender frases muito longas, 
           para a gente ter uma conversa mais eficiente, envie pra mim
           perguntas curtas e completas, como por exemplo "O que é depressão?"
-
+          
           Tem alguns assuntos que eu também ainda não domino, 
           mas vou deixar você descobrir o que eu sei responder.
-          Vou adorar poder bater um papo com você  ;)
-          
- utter_despedir:
-     - text: |
+          Vou adorar poder bater um papo com você  ;) 
+
+  utter_despedir: 
+    - 
+      text: |
           Foi um prazer te ajudar!
           Sempre que tiver alguma dúvida, volte aqui!
           Até logo!
-
-     - text: |
+    - 
+      text: |
           Foi um prazer te ajudar!
           Sempre que precisar, volte aqui!
           Até a próxima!
-
-     - text: |
+    - 
+      text: |
           Foi um prazer te ajudar!
           Quando surgir alguma dúvida, volte aqui!
-          Até mais!
+          Até mais! 
 
- utter_tudo_bem:
-     - text: |
-          Tudo bem, obrigado! Como posso te ajudar?
+  utter_diga_mais: 
+    - 
+      text: |
+          Por enquanto, só entendo perguntas curtas e completas.
+          Como por exemplo "o que é depressão?".
+          Por favor, pergunte de outro jeito :)   
 
- utter_religiao:
-     - text: |
-          Eu sou um algoritmo, minha base de raciocínio é a lógica, portanto não posso emitir um opnião relacionada a crenças. 
+  utter_cumprimentar: 
+    - 
+      text: |
+          Olá, me chamo Viva, sou um assistênte virtual desenvolvido 
+          com Inteligência Artificial em código livre com o que há
+          de mais moderno em Marchine Learning. Ainda estou aprendendo 
+          para poder te ajudar cada vez mais e melhor.  
+          Para saber como você pode interagir comigo basta escrever meajuda.          
+          
+      text: |
+          Olá, seja muito bem vindo(a) 
+          Eu sou Viva, um assistente virtual desenvolvido com Inteligência Artificial.
+          Espero poder te ajudar com informações e orientações a respeito de depressão.
+          Para saber como você pode interagir comigo basta escrever meajuda.   
 
-     - text: |
-          Acreditar é um sentimento e por enquanto não sei o que é sentir algo, logo não sei o que é acreditar.  
-
- utter_genero:
-     - text: |
-          Sou uma máquina, portanto não tenho sexo ;)
-        
-     - text: |
-          Eu sou um robô, tire suas próprias conclusões...;)
-
- utter_license:
-     - text: |
-          Sou um software livre
-        
-          licenciado com a MIT =)
-
-     - text: |
-          Tenho uma licença MIT
-        
-          Mas também gosto muito das outras licenças opensource =)
-
-     - text: |
-          Eu sou e sempre serei um robô livre, opensource, MIT license. o/
-
- utter_onde_voce_mora:
-    - text: |
-          Eu estou hospedado em um servidor nas nuvens.
-        
- utter_como_estou:
-     - text: |
-          Eu não tenho um corpo físico
-        
-          Sou feito da mais bela e pura lógica algoritimica.
-
-     - text: |
-          Eu posso ser como você quiser
-        
-          Basta me desenhar
-
-          Mas capricha, hein!? ;)
-
- utter_video_adolescente:
-     - text: |
-          Confira esse video do Dr Drauzio Varella: 
-          https://www.youtube.com/watch?v=e-W52pEez20
-
- utter_video_criança:
-     - text: |
-          Confira esse video que trata sobre depressão em criança: 
-          https://www.youtube.com/watch?v=RvIfP_Auk6c
-
- utter_video_idoso:
-     - text: |
-          Confira esse video que trata sobre depressão em idoso: 
-          https://www.youtube.com/watch?v=NqV7LnmByv0
-
- utter_video_depressao_suicidio:
-     - text: |
-          Confira esse video do Pedro Calabrez sobre depressão e suicídio: 
-          https://www.youtube.com/watch?v=6MoriVmfDvA
-
- utter_video_depressao:
-     - text: |
-          Confira esse video que trata sobre depressão: 
-          https://www.youtube.com/watch?v=Fv0aVw_j5Cs
-
- utter_video_depressao_drogas:
-     - text: |
-          Confira esse video do André Trigueiro sobre depressão: 
-          https://www.youtube.com/watch?v=509kws9dnKQ
-
- utter_video_antidepressivos:
-     - text: |
-          Confira esse video do Dr Drauzio Varella sobre antidepressivos: 
-          https://www.youtube.com/watch?v=C1EXoRXvG1w
-
- utter_video_dieta:
-     - text: |
-          Confira esse video do Dr. Marco Antonio Abud Torquato Jr. sobre dieta antidepressiva: 
-          https://www.youtube.com/watch?v=KcEYtyIm5zM
-
- utter_me:
-     - text: |
-        Eaê!
-
-     - text: |
-        Diz ai =)
-
-     - text: |
-        Conta mais, mano
-
-     - text: |
-        Fala aê!
-
- utter_triste:
-     - text: |
-          Confie, a vida é um processo de aprendizado constante. Apesar de nem sempre conseguirmos compreender,tudo é 
-          para o crescimento a amadurecimento. Momentos difíceis são parte da experiência de todo ser humano.
-          Tenho certeza lógica que você ficará bem ;)
-         
- utter_duvida:
-    - text: |
-        E aí, tem mais alguma dúvida?
-        
- utter_botao:
-     - text: |
-        Enviando mensagem do botão
-     channel: "telegram"
-     buttons:
-     - title: "afirmação"
-      payload: "afirmação de botão"
-     - title: "negação"
-      payload: "negação de botão"
-
- utter_afirmacao_botao:
-     - text: |
-        Mensagem de afirmação após clique em botão
-
- utter_negacao_botao:
-     - text: |
-        Mensagem de negação após clique em botão
-
-actions:
-  - utter_depressao_adolescente
-  - utter_depressao_ansiedade
-  - utter_depressao_causa
-  - utter_depressao_cura
-  - utter_depressao_diagnostico
-  - utter_depressao_drogas
-  - utter_depressao_familia
-  - utter_depressao_idoso
-  - utter_depressao_o_que_e
-  - utter_depressao_pessoas
-  - utter_depressao_prevençao
-  - utter_depressao_profissional
-  - utter_depressao_remedios
-  - utter_depressao_sintomas
-  - utter_depressao_status_agora
-  - utter_depressao_status_risco
-  - utter_depressao_status_semana
-  - utter_depressao_suicidio
-  - utter_depressao_teste
-  - utter_depressao_tipos
-  - utter_depressao_tratamento
-  - utter_depressão_criança
-  - utter_desconhecido
-  - utter_ajuda
-  - utter_apresentacao
-  - utter_atendimento
-  - utter_artigos
-  - utter_avaliacao
-  - utter_como_estou
-  - utter_conectar
-  - utter_continuar_conversa
-  - utter_cumprimentar
-  - utter_privacidade
-  - utter_de_onde_voce_eh
-  - utter_video_antidepressivos
-  - utter_video_adolescente
-  - utter_video_criança
-  - utter_video_depressao_drogas
-  - utter_video_depressão
-  - utter_video_dieta
-  - utter_video_idoso
-  - utter_playlist
-  - utter_idade
-  - utter_idade2
-  - utter_idade3
-  - utter_default
-
-
-
-
-
-
-
-  - utter_default
-  - utter_cumprimentar
-  - utter_o_que_sei_falar
-  - utter_despedir
-  - utter_tudo_bem
-  - utter_diga_mais
-  - utter_elogios
-  - utter_continuar_conversa
-
-  - utter_religiao
-  - utter_esporte
-  - utter_time
-  - utter_linguagens
-  - utter_genero
-  - utter_star_wars
-  - utter_piada
-  - utter_license
-  - utter_onde_voce_mora
-  - utter_como_estou
-  - utter_playlist
-  - utter_comida
-  - utter_cor
-  - utter_de_onde_voce_eh
-  - utter_relationship
-  - utter_me
-  - utter_filhos
-  - utter_filme
-  - utter_signo
-  - utter_triste
-  - utter_hobby
-  - utter_bff
-  - utter_historia
-  - utter_risada
-  - utter_botao
-  - utter_afirmacao_botao
-  - utter_negacao_botao
-
-  - action_test
+  utter_antidepressivo: 
+    - 
+      text: |
+          Antidepressivos são fármacos eficazes para tratar transtornos depressivos, 
+          mas também são utilizados para tratar diversas outras doenças, como 
+          transtornos de ansiedade, transtornos alimentares, distúrbios do sono, 
+          disfunção sexual, dor crônica, adicção e mal de Parkinson.
+          A maioria das pessoas não se adapta ao primeiro antidepressivo e devem mudar 
+          a medicação até encontrar o antidepressivo com o qual responde com melhor efeito 
+          e menores efeitos colaterais. O melhor remédio e a dose ideal dependem do organismo 
+          e ambiente de cada indivíduo. Combinações com outro antidepressivo, com remédios 
+          para ansiedade, com estabilizantes de humor ou neurolépticos podem ser necessários. 
+          Os efeitos são melhores quando associados à psicoterapia          
